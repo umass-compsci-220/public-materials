@@ -1,4 +1,4 @@
-# Environment
+# Setting Up your Environment
 
 Before taking this course, you will need to download various pieces of software. This document will guide you through that process in a beginner-friendly manner. If you have any issues configuring your system, please seek help as soon as possible. You have the internet, office hours, and Campuswire at your disposal.
 
