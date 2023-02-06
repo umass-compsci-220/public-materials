@@ -1,4 +1,4 @@
-# Setting Up your Environment
+# Setting Up your Development Environment
 
 Before taking this course, you will need to download various pieces of software. This document will guide you through that process in a beginner-friendly manner. If you have any issues configuring your system, please seek help as soon as possible. You have the internet, office hours, and Campuswire at your disposal.
 
@@ -65,7 +65,7 @@ To verify Node.js and `npm` installed:
 - Type in the command `npm --version` and press enter
   - You should see something like `8.19.2`
 
-If you do not see both version numbers, you did not install them correctly.
+If you do not see both version numbers, you did not install them correctly. You may need to restart.
 
 ## Version Control: Git
 
