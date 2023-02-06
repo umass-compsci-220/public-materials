@@ -132,7 +132,7 @@ If you are unfamiliar with VSCode, it is recommended that you watch [this video 
 
 The document on [editing homework](./EDITING.md) covers how to extract, open, and modify projects.
 
-## Installing VSCode
+### Installing VSCode
 
 1. Open the [VSCode download page](https://code.visualstudio.com/Download)
 2. Download the installer for your system (click the large button under your system's icon)
@@ -140,7 +140,7 @@ The document on [editing homework](./EDITING.md) covers how to extract, open, an
 3. Run the installer with the default options
 4. After the installer has finished, you can close it
 
-### VSCode Extensions
+#### VSCode Extensions
 
 The majority of [VSCode is written in TypeScript](https://github.com/Microsoft/vscode), so a lot of TS/JS features come standard with the default installation. The following extensions may be useful:
 
@@ -151,6 +151,6 @@ The majority of [VSCode is written in TypeScript](https://github.com/Microsoft/v
 
 You can install these extensions through the [VSCode Extensions tab](https://code.visualstudio.com/docs/editor/extension-marketplace).
 
-### Configuration
+#### Configuration
 
 You can [configure VSCode](https://code.visualstudio.com/docs/getstarted/settings) to your liking (`File -> Preferences -> Settings`). Settings specific to TypeScript can be found by typing `typescript.` in the search bar.
