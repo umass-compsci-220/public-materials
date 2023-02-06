@@ -115,7 +115,7 @@ homework1/
 ├─ package.lock.json  - Specific dependency information (hashes)
 ```
 
-Each file has a specific purpose. `index.ts` is your playground. You may use it to write small programs that use the members (functions or classes) defined in the `include/` folder. Use the provided `?????.test.ts` file to write your tests.
+Each file has a specific purpose. `main.ts` is your playground. You may use it to write small programs that use the members (functions or classes) defined in the `include/` folder. Use the provided `?????.test.ts` file to write your tests.
 
 If you were designing a math library, it would not make much sense if there was code between your provided functions:
 
@@ -182,7 +182,7 @@ Here the line `copy.show()` makes no sense in the context of the function. The f
 Instead, this logic should be omitted and left up to the caller of the function to decide what to do with the result.
 
 ```ts
-// index.ts
+// main.ts
 imageMap(myImage).show();
 ```
 

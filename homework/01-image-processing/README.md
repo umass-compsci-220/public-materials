@@ -34,8 +34,6 @@ Students will be graded on their ability to:
 Please use the [resources document](../../resources/README.md) if you are stuck. Particularly:
 
 - [Editing](../../resources/homework/EDITING.md), [running/debugging](../../resources/homework/RUNNING_AND_DEBUGGING.md), and [testing](../../resources/homework/TESTING.md) a project
-- [Lecture 1: Introduction and Higher Order Functions](../../materials/01-introduction-and-higher-order-functions/README.md)
-- [Lecture 2: TypeScript and Type Signatures](../../materials/02-typescript-and-type-signatures/README.md)
 - [MDN Guide on Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
   - [MDN Docs Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 - [MDN Guide on Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)
@@ -146,7 +144,7 @@ const arr = [0, 0, 0];
 renImage.setPixel(0, 0, arr);
 ```
 
-There is also an object (similar to a hash table) called `COLORS`, which is used to get the digital representation of a color from its name. This could be helpful inside of [`index.ts`](./src/index.ts) or [`imageProcessing.test.ts`](./src/imageProcessing.test.ts).
+There is also an object (similar to a hash table) called `COLORS`, which is used to get the digital representation of a color from its name. This could be helpful inside of [`main.ts`](./src/main.ts) or [`imageProcessing.test.ts`](./src/imageProcessing.test.ts).
 
 ```ts
 // include/image.ts
@@ -161,14 +159,14 @@ export const COLORS = {
   MAGENTA: [255, 0, 255],
 };
 
-// src/index.ts
-import { Image, COLORS } from "./image";
+// src/main.ts
+import { Image, COLORS } from "../include/image.js";
 
 const blueImage = Image.create(25, 25, COLORS.BLUE);
 const blackImage = Image.create(25, 25, COLORS.BLACK);
 ```
 
-Inside of the project's [`index.ts`](./src/index.ts) is some example usages of the `Image` interface. You can read the full documentation and source for everything inside of [`image.ts`](./include/image.ts).
+Inside of the project's [`main.ts`](./src/main.ts) is some example usages of the `Image` interface. You can read the full documentation and source for everything inside of [`image.ts`](./include/image.ts).
 
 ## Testing
 
@@ -182,7 +180,7 @@ Checkout the [project testing document](../../resources/homework/TESTING.md) for
 
 If you are having trouble reading the specification, please read the [document on reading specification](../../resources/HOW_TO_READ_A_SPEC.md). If you still need clarification after reading that, please go to office hours or ask a question on Campuswire (**search for a similar question first**).
 
-All functions should be written in [`imageProcessing.ts`](./src/imageProcessing.ts). Other files ([`index.ts`](./src/index.ts) and [`imageProcessing.test.ts`](./src/imageProcessing.test.ts)) should import them like so:
+All functions should be written in [`imageProcessing.ts`](./src/imageProcessing.ts). Other files ([`main.ts`](./src/main.ts) and [`imageProcessing.test.ts`](./src/imageProcessing.test.ts)) should import them like so:
 
 ```ts
 import { removeRed, flipColors, mapLine, imageMap, mapToGB, mapFlipColors } from "./imageProcessing.js";
