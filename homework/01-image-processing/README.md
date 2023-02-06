@@ -178,7 +178,7 @@ Checkout the [project testing document](../../resources/homework/TESTING.md) for
 
 ## Programming Tasks
 
-If you are having trouble reading the specification, please read the [document on reading specification](../../resources/HOW_TO_READ_A_SPEC.md). If you still need clarification after reading that, please go to office hours or ask a question on Campuswire (**search for a similar question first**).
+If you are having trouble reading the specification, please go to office hours or ask a question on Campuswire (**search for a similar question first**).
 
 All functions should be written in [`imageProcessing.ts`](./src/imageProcessing.ts). Other files ([`main.ts`](./src/main.ts) and [`imageProcessing.test.ts`](./src/imageProcessing.test.ts)) should import them like so:
 
