@@ -64,7 +64,7 @@ Please do come to office hours for:
 | Monday        | 11:30am - 12:30pm | Saurabh Bajaj      | Zoom Link TBD      |
 | Monday        | 1:00pm - 2:00pm   | John Wordell       | T220               |
 | Monday        | 2:00pm - 3:00pm   | Shrushti Soni      | Zoom Link TBD      |
-| Monday        | 3:30pm - 4:30pm   | Daisy LaBonte      | Zoom Link TBD      |
+| Monday        | 3:30pm - 4:30pm   | Daisy LaBonte      | [Zoom](https://umass-amherst.zoom.us/j/6286340706)|
 | Monday        | 5:30pm - 6:30pm   | Vi Doan            | T220               |
 | **Tuesday**   | 9:00am - 10:00am  | Angela Upreti      | Zoom Link TBD      |
 | Tuesday       | 11:00am - 12:00pm | Marius Minea       | LGRC A261 and Zoom |
@@ -75,8 +75,8 @@ Please do come to office hours for:
 | Wednesday     | 4:30pm - 5:30pm   | Emeka Ifejiagwa    | Zoom Link TBD      |
 | Wednesday     | 5:15pm - 6:15pm   | Marius Minea       | LGRC A261 and Zoom |
 | Wednesday     | 5:45pm - 6:45pm   | Shreyan Mallik     | Zoom Link TBD      |
-| Wednesday     | 8:00pm - 9:00pm   | Daisy LaBonte      | Zoom Link TBD      |
-| **Thursday**  | 10:00am - 11:00am | Idhita Kumar       | Zoom Link TBD      |
+| Wednesday     | 8:00pm - 9:00pm   | Daisy LaBonte      | [Zoom](https://umass-amherst.zoom.us/j/6286340706)|
+| **Thursday**  | 10:00am - 11:00am | Ishita Kumar       | [Zoom](https://umass-amherst.zoom.us/j/94063306225)|
 | Thursday      | 11:30am - 12:30pm | Saurabh Bajaj      | T220               |
 | Thursday      | 12:30pm - 1:30pm  | Paul Davis         | T220               |
 | Thursday      | 2:00pm - 3:00pm   | Dzung Pham         | T220               |
