@@ -34,6 +34,7 @@ Students will be graded on their ability to:
 Please use the [resources document](../../resources/README.md) if you are stuck. Particularly:
 
 - [Editing](../../resources/homework/EDITING.md), [running/debugging](../../resources/homework/RUNNING_AND_DEBUGGING.md), and [testing](../../resources/homework/TESTING.md) a project
+- [Functions and Arrow Functions](../../resources/FUNCTIONS_AND_ARROW_FUNCTIONS.md)
 - [MDN Guide on Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
   - [MDN Docs Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 - [MDN Guide on Arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)
