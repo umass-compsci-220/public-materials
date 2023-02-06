@@ -17,6 +17,8 @@
 
 3. Download the provided ZIP file and place it inside the newly created assignment folder.
 
+- If you'd like to open the empty assignment, download [this ZIP](../../practice-assignments/01-empty-assignment/01-empty-assignment.zip).
+
 4. Right-click the ZIP archive and extract the contents into the folder.
 
 5. Open VSCode, click on `File -> Open Folder...`, then navigate to the extracted contents.

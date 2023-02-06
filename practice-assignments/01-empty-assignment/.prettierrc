@@ -1,0 +1,15 @@
+{
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.mts"
+      ],
+      "options": {
+        "parser": "typescript"
+      }
+    }
+  ],
+  "printWidth": 120,
+  "arrowParens": "avoid"
+}
