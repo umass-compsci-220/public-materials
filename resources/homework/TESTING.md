@@ -80,7 +80,7 @@ If you have the [jest extension for VSCode](https://marketplace.visualstudio.com
 Alternatively, you can run the provided test script by opening a VSCode terminal (`Terminal -> New Terminal`) and running the `npm run test` command. Use `npm run test:coverage` to get coverage results.
 
 <p align="center">
-  <img src="../../images/jest-output.png" />
+  <img src="../../media/jest-output.png" />
 </p>
 
 Above, is an example output of the `npm run test:coverage` command. There was only one test written (removeRed removes red), so the homework coverage requirements were not met.

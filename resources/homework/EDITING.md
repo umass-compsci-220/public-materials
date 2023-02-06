@@ -52,7 +52,7 @@ Using the [VSCode ESlint](https://marketplace.visualstudio.com/items?itemName=db
 The `npm run lint:fix` command will attempt to fix all the automatically fixable warnings. Such as using `let` for a variable that is never reassigned.
 
 <p align="center">
-  <img src="../../images/eslint-output.png" />
+  <img src="../../media/eslint-output.png" />
 </p>
 
 Above is some example output from running `npm run lint`. As you can see, on line 46, column 7, we are getting a warning because we define a variable `x`, but never use it.

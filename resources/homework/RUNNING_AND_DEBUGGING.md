@@ -10,7 +10,7 @@
 Assignments do not have main methods, but they do have `main.ts` files. This is the "entry point" of your program. To run it, simply use the `npm run start` command in your assignments terminal (open up the assignment folder, `Terminal -> New Terminal`).
 
 <p align="center">
-  <img src="../../images/start-output.png" />
+  <img src="../../media/start-output.png" />
 </p>
 
 Above is an example run of a working solution for the first homework.

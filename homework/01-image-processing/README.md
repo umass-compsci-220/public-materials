@@ -47,13 +47,13 @@ Please use the [resources document](../../resources/README.md) if you are stuck.
 **Any image you see on your computer screen consists of tiny square dots known as pixels.** On many screens, individual pixels are too small to see with the naked eye, but if you look very closely, you may be able to discern the pattern in which pixels are arranged, as illustrated in the figure below.
 
 <p align="center">
-  <img src="../../images/image-pixels.png" />
+  <img src="../../media/image-pixels.png" />
 </p>
 
 **Pixels are arranged in a grid and each pixel has x- and y- coordinates that identify its position in the grid.** All coordinates are non-negative integers and the top-left corner has the coordinates (0, 0). Therefore, the x-coordinate increases as you move right and the y-coordinate increases as you move down. For example, if we had an image with just nine pixels arranged in a 3-by-3 grid, their coordinates would appear as shown below.
 
 <p align="center">
-  <img src="../../images/image-coordinates.svg" />
+  <img src="../../media/image-coordinates.svg" />
 </p>
 
 **Finally, every pixel has a color that is represented using the three primary colors (i.e., red, green, and blue).** Therefore, to set the color of a pixel, you have to specify how much red, green, and blue to use. **Each of these primary colors has an _integer_ intensity between 0 and 255 (inclusive).** For example, to get a black pixel, we can set the intensity of the three primary colors to 0, thus the black pixel value is `[0, 0, 0]`, and to get a white pixel we can set the intensity of the three primary colors to 255, thus the white color pixel value is `[255, 255, 255]`.
