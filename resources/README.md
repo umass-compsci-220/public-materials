@@ -74,7 +74,7 @@ Please do come to office hours for:
 | Wednesday     | 3:30pm - 4:30pm   | Maximilian Kuechen | T220               |
 | Wednesday     | 4:30pm - 5:30pm   | Emeka Ifejiagwa    | Zoom Link TBD      |
 | Wednesday     | 5:15pm - 6:15pm   | Marius Minea       | LGRC A261 and Zoom |
-| Wednesday     | 5:45pm - 6:45pm   | Shreyan Mallik     | Zoom Link TBD      |
+| Wednesday     | 5:45pm - 6:45pm   | Shreyan Mallik     | [Zoom{(https://umass-amherst.zoom.us/j/4786826178)|
 | Wednesday     | 8:00pm - 9:00pm   | Daisy LaBonte      | [Zoom](https://umass-amherst.zoom.us/j/6286340706)|
 | **Thursday**  | 10:00am - 11:00am | Ishita Kumar       | [Zoom](https://umass-amherst.zoom.us/j/94063306225)|
 | Thursday      | 11:30am - 12:30pm | Saurabh Bajaj      | T220               |
