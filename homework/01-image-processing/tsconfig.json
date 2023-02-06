@@ -1,0 +1,16 @@
+{
+  "extends": "@tsconfig/node-lts-strictest-esm/tsconfig.json",
+  "include": ["src/**/*", "__tests__/**/*", "include/**/*", "jest.config.ts"],
+  "compilerOptions": {
+    "outDir": "out/",
+    "noUncheckedIndexedAccess": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "checkJs": false,
+    "importsNotUsedAsValues": "remove",
+    "sourceMap": true
+  },
+  "ts-node": {
+    "esm": true
+  }
+}
