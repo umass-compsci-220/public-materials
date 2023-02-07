@@ -73,7 +73,7 @@ Please do come to office hours for:
 | **Wednesday** | 2:30pm - 3:30pm   | Daniel Melanson    | T220               |
 | Wednesday     | 3:30pm - 4:30pm   | Maximilian Kuechen | T220               |
 | Wednesday     | 4:30pm - 5:30pm   | Emeka Ifejiagwa    | Zoom Link TBD      |
-| Wednesday     | 5:15pm - 6:15pm   | Marius Minea       | LGRC A261 and Zoom |
+| Wednesday     | 5:15pm - 6:15pm   | Marius Minea       | LGRC A261 and [Zoom](https://umass-amherst.zoom.us/j/92493044446)|
 | Wednesday     | 5:45pm - 6:45pm   | Shreyan Mallik     | [Zoom](https://umass-amherst.zoom.us/j/4786826178)|
 | Wednesday     | 8:00pm - 9:00pm   | Daisy LaBonte      | [Zoom](https://umass-amherst.zoom.us/j/6286340706)|
 | **Thursday**  | 10:00am - 11:00am | Ishita Kumar       | [Zoom](https://umass-amherst.zoom.us/j/94063306225)|
@@ -82,7 +82,7 @@ Please do come to office hours for:
 | Thursday      | 2:00pm - 3:00pm   | Dzung Pham         | T220               |
 | **Friday**    | 12:00pm - 1:00pm  | Catherine Qi       | T220               |
 | Friday        | 12:00pm - 1:00pm  | Rosaline Zhu       | T220               |
-| Friday        | 1:15pm - 2:15pm   | Marius Minea       | LGRC A261 and Zoom |
+| Friday        | 1:15pm - 2:15pm   | Marius Minea       | LGRC A261 and [Zoom](https://umass-amherst.zoom.us/j/92493044446)|
 | Friday        | 2:00pm - 3:00pm   | Kyler Schulz       | T220               |
 
 #### Holidays and Schedule Changes
