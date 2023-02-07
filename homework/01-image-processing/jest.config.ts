@@ -2,7 +2,7 @@ import type { JestConfigWithTsJest } from "ts-jest";
 
 const jestConfig: JestConfigWithTsJest = {
   testPathIgnorePatterns: ["out/*"],
-  collectCoverageFrom: ["src/**/!(index).ts"],
+  collectCoverageFrom: ["src/**/!(main).ts"],
   coverageThreshold: {
     global: {
       branches: 50,
