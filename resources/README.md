@@ -67,12 +67,12 @@ Please do come to office hours for:
 | Monday        | 3:30pm - 4:30pm   | Daisy LaBonte      | [Zoom](https://umass-amherst.zoom.us/j/6286340706)|
 | Monday        | 5:30pm - 6:30pm   | Vi Doan            | T220               |
 | **Tuesday**   | 9:00am - 10:00am  | Angela Upreti      | [Zoom](https://umass-amherst.zoom.us/j/98762553166)|
-| Tuesday       | 11:00am - 12:00pm | Marius Minea       | LGRC A261 and Zoom |
+| Tuesday       | 11:00am - 12:00pm | Marius Minea       | LGRC A261 and [Zoom](https://umass-amherst.zoom.us/j/92493044446)|
 | Tuesday       | 1:00pm - 2:00pm   | Anna Allen         | T220               |
 | Tuesday       | 1:45pm - 2:45pm   | Kyler Schulz       | T220               |
 | **Wednesday** | 2:30pm - 3:30pm   | Daniel Melanson    | T220               |
 | Wednesday     | 3:30pm - 4:30pm   | Maximilian Kuechen | T220               |
-| Wednesday     | 4:30pm - 5:30pm   | Emeka Ifejiagwa    | Zoom Link TBD      |
+| Wednesday     | 4:30pm - 5:30pm   | Emeka Ifejiagwa    | [Zoom](https://umass-amherst.zoom.us/j/3476472584)|
 | Wednesday     | 5:15pm - 6:15pm   | Marius Minea       | LGRC A261 and [Zoom](https://umass-amherst.zoom.us/j/92493044446)|
 | Wednesday     | 5:45pm - 6:45pm   | Shreyan Mallik     | [Zoom](https://umass-amherst.zoom.us/j/4786826178)|
 | Wednesday     | 8:00pm - 9:00pm   | Daisy LaBonte      | [Zoom](https://umass-amherst.zoom.us/j/6286340706)|
