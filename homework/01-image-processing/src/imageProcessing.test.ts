@@ -1,6 +1,6 @@
 import assert from "node:assert";
 import { COLORS, Image } from "../include/image.js";
-import { removeRed } from "./imageProcessing.js";
+import { flipColors, removeRed } from "./imageProcessing.js";
 
 describe("removeRed", () => {
   const whiteImage = Image.create(10, 10, COLORS.WHITE);
@@ -41,7 +41,7 @@ describe("flipColors", () => {
   whiteImage.setPixel(0, 0, [100, 0, 150]);
 
   it("should correctly flip top left corner", () => {
-    const flippedWhiteImage = removeRed(whiteImage);
+    const flippedWhiteImage = flipColors(whiteImage);
     const p = flippedWhiteImage.getPixel(0, 0);
 
     assert(p[0] === 75);
