@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "pngjs": "^6.0.0"
+    "pngjs": "^6.0.0",
+    "tmp": "^0.2.1"
   },
   "devDependencies": {
     "@tsconfig/node-lts-strictest-esm": "^18.12.1",
@@ -18,7 +19,8 @@
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.3",
-    "@types/pngjs": "^6.0.1"
+    "@types/pngjs": "^6.0.1",
+    "@types/tmp": "^0.2.3"
   },
   "engines": {
     "node": ">= 18.0.0"
@@ -28,11 +30,13 @@
     "build:submission": "npm run format && npm run build && node ./zip.js",
     "build:watch": "tsc --watch",
     "format": "prettier --write ./src/ ./include/",
-    "lint": "eslint --config .eslintrc --max-warnings 0 ./src/",
-    "lint:fix": "eslint --config .eslintrc --fix ./src/",
+    "format:check": "prettier --check ./src/",
+    "lint": "eslint --no-inline-config --config .eslintrc --max-warnings 0 ./src/",
+    "lint:fix": "eslint --no-inline-config --config .eslintrc --fix ./src/",
     "start": "ts-node ./src/main.ts",
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:json": "jest --coverage --json"
   },
   "type": "module",
   "name": "02-image-processing-with-hof"

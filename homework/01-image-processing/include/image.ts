@@ -4,6 +4,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 
+import tmp from "tmp";
 import { PNG } from "pngjs";
 
 const IMAGES_FOLDER = path.resolve(process.cwd(), "images");
@@ -179,11 +180,13 @@ export class Image {
   }
 
   show(): void {
-    const filePath = path.join(os.tmpdir(), `image.ts-${new Date().toISOString()}.png`);
+    const temp = tmp.fileSync({
+      postfix: ".png",
+    });
 
-    this.saveToPath(filePath);
+    this.saveToPath(temp.name);
 
-    exec(`code --reuse-window ${filePath}`);
+    exec(`code --reuse-window ${temp.name}`);
   }
 
   saveToPath(filePath: string): void {
