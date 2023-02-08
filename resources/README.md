@@ -61,7 +61,7 @@ Please do come to office hours for:
 | Day           | Time              | Course Staff       | Location/Zoom Link                                                |
 | ------------- | ----------------- | ------------------ | ----------------------------------------------------------------- |
 | **Monday**    | 10:00am - 11:00am | Angela Upreti      | [Zoom](https://umass-amherst.zoom.us/j/98762553166)               |
-| Monday        | 11:30am - 12:30pm | Saurabh Bajaj      | Zoom Link TBD                                                     |
+| Monday        | 11:30am - 12:30pm | Saurabh Bajaj      | [Zoom](https://umass-amherst.zoom.us/j/99759006093)               |
 | Monday        | 1:00pm - 2:00pm   | John Wordell       | T220                                                              |
 | Monday        | 2:00pm - 3:00pm   | Shrushti Soni      | Zoom Link TBD                                                     |
 | Monday        | 3:30pm - 4:30pm   | Daisy LaBonte      | [Zoom](https://umass-amherst.zoom.us/j/6286340706)                |
