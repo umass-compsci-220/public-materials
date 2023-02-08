@@ -1,12 +1,11 @@
 import assert from "node:assert";
 import { COLORS, Image } from "../include/image.js";
-import { flipColors, removeRed } from "./imageProcessing.js";
+import { removeRed } from "./imageProcessing.js";
 
 describe("removeRed", () => {
-  const whiteImage = Image.create(10, 10, COLORS.WHITE);
-  const gbImage = removeRed(whiteImage);
-
   it("should remove red from the upper left corner", () => {
+    const whiteImage = Image.create(10, 10, COLORS.WHITE);
+    const gbImage = removeRed(whiteImage);
     const p = gbImage.getPixel(0, 0);
 
     assert(p[0] === 0, "The red channel should be 0.");
@@ -25,6 +24,8 @@ describe("removeRed", () => {
   });
 
   it("should remove red from the center", () => {
+    const whiteImage = Image.create(10, 10, COLORS.WHITE);
+    const gbImage = removeRed(whiteImage);
     const p = gbImage.getPixel(5, 5);
 
     assert(p[0] === 0, "The red channel should be 0.");
@@ -36,12 +37,11 @@ describe("removeRed", () => {
 });
 
 describe("flipColors", () => {
-  // A white image is not particularly helpful in this context
-  const whiteImage = Image.create(10, 10, COLORS.WHITE);
-  whiteImage.setPixel(0, 0, [100, 0, 150]);
-
   it("should correctly flip top left corner", () => {
-    const flippedWhiteImage = flipColors(whiteImage);
+    const whiteImage = Image.create(10, 10, COLORS.WHITE);
+    // A white image is not particularly helpful in this context
+    whiteImage.setPixel(0, 0, [100, 0, 150]);
+    const flippedWhiteImage = removeRed(whiteImage);
     const p = flippedWhiteImage.getPixel(0, 0);
 
     assert(p[0] === 75);

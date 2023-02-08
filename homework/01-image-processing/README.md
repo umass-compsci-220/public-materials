@@ -202,7 +202,7 @@ export function mapLine(img: Image, lineNo: number, func: (c: Color) => Color): 
 }
 ```
 
-The function _should modify_ the given image in place, so that the value of each pixel in the given horizontal line is the result of applying `func` to the corresponding pixel of `img`. It does not return any value. If `lineNo` is not a valid line number, then `img` should not be modified. 
+The function _should modify_ the given image in place, so that the value of each pixel in the given horizontal line is the result of applying `func` to the corresponding pixel of `img`. It does not return any value. If `lineNo` is not a valid line number, then `img` should not be modified.
 
 4. Write a function with the following header:
 
