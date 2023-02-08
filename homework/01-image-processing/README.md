@@ -3,6 +3,7 @@
 - Please download the project [here](./01-image-processing.zip).
 - If you need help installing [VSCode](https://code.visualstudio.com/) and [Node.js](https://nodejs.org/) (required for this course), read [this document](../../resources/homework/ENVIRONMENT.md).
 - If you need help opening the project, read [this document](../../resources/homework/EDITING.md).
+- **After opening, run `npm install` in a VSCode terminal**
 
 ## Overview
 
