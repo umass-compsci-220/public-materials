@@ -39,5 +39,5 @@
     "test:json": "jest --coverage --json"
   },
   "type": "module",
-  "name": "02-image-processing-with-hof"
+  "name": "01-image-processing"
 }
