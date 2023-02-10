@@ -27,7 +27,7 @@ Students will be graded on their ability to:
   - This will be automatically graded using ESLint
   - For the first homework, this will not be checked
   - Starting with Homework 2, the autograder will deduct 2.5% if you have any linting errors
-  - See [Linting and Formatting Assignments](../../resources/homework/EDITING.md#linting-and-formatting-assignments) for more information
+  - See [Linting and Formatting Assignments](../../resources/homework/EDITING.md#linting-and-formatting-assignments)
 - Follow the [bad practice](../../guidelines/BAD_PRACTICES.md), and [testing](../../guidelines/TESTING.md) guidelines
   - For future assignments, there may be manual grading for these guidelines
   - Starting with Homework **3**, there may be crediting manual grading
@@ -35,7 +35,7 @@ Students will be graded on their ability to:
 - Design full-coverage [unit-tests](#testing) for the functions they implemented
   - For the first homework, this will not be checked
   - Starting with Homework 2, the autograder will calculate and score you based off how well you write your tests
-  - See [testing guidelines](../../guidelines/TESTING.md#coverage) on coverage
+  - See the [testing guidelines](../../guidelines/TESTING.md#coverage) on coverage
 
 ### Resources
 
@@ -215,7 +215,7 @@ export funciton flipColors(img: Image): Image {
 
 `flipColors` takes an image as an argument and returns a new image, where each pixel has each `Color` channel set to the average of the other two channels in the original pixel. Truncate any decimal remainder using [`Math.floor`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor).
 
-### Moving Forward 
+### Moving Forward
 
 If you have solved these two tasks, you might notice that the structure of the two functions is very similar, the difference is only in the actual processing applied. We can avoid duplication by defining functions, similar to [Array.prototype.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), that apply the same transformation to several or all pixels of an image.
 
