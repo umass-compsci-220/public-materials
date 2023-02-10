@@ -6,34 +6,34 @@ After you finish installing all the necessary components, you can visit the [edi
 
 ## Getting Started
 
-0. (Optional) Install Windows Subsystem for Linux
+**0. (Optional) Install Windows Subsystem for Linux**
 
 - If you are on Windows, it is worthwhile to consider installing [WSL](https://learn.microsoft.com/en-us/windows/wsl/about)
 - Windows may be hard to configure in the future when you use more advance tools
 - Read more [here](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-1. Install [Node.js](https://nodejs.org/en/about/) and [NPM](https://docs.npmjs.com/about-npm)
+**1. Install [Node.js](https://nodejs.org/en/about/) and [NPM](https://docs.npmjs.com/about-npm)**
 
 - Read [Installing Node.js and NPM](#installing-nodejs-and-npm) for instructions
 - Optionally read [About Node.js and NPM](#about-nodejs-and-npm) for details
 - **Note: Please make sure you have at leave `node` version 16**
 
-2. Install Git
+**2. Install Git**
 
 - Read [Installing Git](#installing-git) for instructions
 - Optionally read [About Version Control](#about-version-control) for details
 
-3. Install VSCode
+**3. Install VSCode**
 
 - Read [Installing VSCode](#installing-vscode) for instructions
 - Alternativley, you may install
 - Watching [this video (7m16s)](https://www.youtube.com/watch?v=B-s71n0dHUk)
 
-4. Open the First Homework in VSCode
+**4. Open the First Homework in VSCode**
 
 - Read [Editing: Opening An Assignment in VSCode](./EDITING.md#opening-an-assignment-in-vscode)
 
-## About Node.js and NPM
+## About Node.js and NPM**
 
 From the [Wikipedia page on Runtime Systems](https://en.wikipedia.org/wiki/Runtime_system):
 
