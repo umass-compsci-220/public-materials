@@ -2,8 +2,6 @@
 
 Before taking this course, you will need to download various pieces of software. This document will guide you through that process in a beginner-friendly manner. If you have any issues configuring your system, please seek help as soon as possible. You have the internet, office hours, and Campuswire at your disposal.
 
-After you finish installing all the necessary components, you can visit the [editing guide](./EDITING.md#opening-an-assignment-in-vscode) to open a practice assignment.
-
 ## Getting Started
 
 **0. (Optional) Install Windows Subsystem for Linux**
@@ -16,7 +14,7 @@ After you finish installing all the necessary components, you can visit the [edi
 
 - Read [Installing Node.js and NPM](#installing-nodejs-and-npm) for instructions
 - Optionally read [About Node.js and NPM](#about-nodejs-and-npm) for details
-- **Note: Please make sure you have at leave `node` version 16**
+- **Note: Please make sure you have at least `node` version 16**
 
 **2. Install Git**
 
@@ -33,7 +31,7 @@ After you finish installing all the necessary components, you can visit the [edi
 
 - Read [Editing: Opening An Assignment in VSCode](./EDITING.md#opening-an-assignment-in-vscode)
 
-## About Node.js and NPM**
+## About Node.js and NPM
 
 From the [Wikipedia page on Runtime Systems](https://en.wikipedia.org/wiki/Runtime_system):
 
