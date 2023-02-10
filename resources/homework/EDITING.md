@@ -41,7 +41,8 @@
 
 **10. Run the assignment**
 
-Congratulations, you have successfully opened an assignment! The next step would be to [run the assignment](./RUNNING_AND_DEBUGGING.md#running-an-assignment-in-vscode).
+- Run the command `npm run start` to run the `src/main.ts` file
+- See more instruction is the [running and debugging document](./RUNNING_AND_DEBUGGING.md#running-an-assignment-in-vscode).
 
 ## Linting and Formatting Assignments
 
