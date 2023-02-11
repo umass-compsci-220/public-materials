@@ -24,8 +24,8 @@ Before taking this course, you will need to download various pieces of software.
 **3. Install VSCode**
 
 - Read [Installing VSCode](#installing-vscode) for instructions
-- Alternativley, you may install
-- Watching [this video (7m16s)](https://www.youtube.com/watch?v=B-s71n0dHUk)
+- Watch [this video (7m16s)](https://www.youtube.com/watch?v=B-s71n0dHUk) to familiarize yourself with VSCode
+- Alternativley, you use any text editor or IDE. [LunarVim](https://www.lunarvim.org/), [GNU Emacs](https://www.gnu.org/software/emacs/), and [Webstorm](https://www.jetbrains.com/webstorm/) are good options.
 
 **4. Open the First Homework in VSCode**
 
@@ -40,6 +40,8 @@ From the [Wikipedia page on Runtime Systems](https://en.wikipedia.org/wiki/Runti
 In the past, you might have had to install Java on your system. You were installing the runtime responsible for executing your Java source code. In this course, you will be programming in TypeScript, which is compiled (transformed or made) into JavaScript, then run using a JavaScript runtime system.
 
 [Node.js](https://nodejs.org/en/about/) is a popular JavaScript runtime designed for making web applications. It comes bundled with a complete standard library and access to a public repository of millions of third-party packages. It builds upon the JavaScript runtime that is used in Google Chrome.
+
+[NPM](https://docs.npmjs.com/about-npm) (Node Package Manager) manages the logistics of distributing Node.js software. It keeps track of your projects dependencies so others can download and use them seamlessly. You can read more on their [about page](https://docs.npmjs.com/about-npm).
 
 ## Installing Node.js and NPM
 
