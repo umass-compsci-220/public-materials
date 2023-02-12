@@ -54,7 +54,7 @@ From [Wikipedia on Lint](<https://en.wikipedia.org/wiki/Lint_(software)>):
 
 > Lint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs. The term originates from a Unix utility that examined C language source code.
 
-Homework assignments will require that you do not have any linter errors. To check your linter warnings, run the `npm run lint` command in a terminal. It will produce output detailing where and how your code could improve.
+Homework assignments may require that you do not have any linter warnings. To check your linter warnings, use the `npm run lint` command in a terminal. It will produce output detailing where and how your code could improve.
 
 If you do not understand what the warning means, Googling its name may help ("@typescript-eslint/no-unused-vars").
 
