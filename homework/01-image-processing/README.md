@@ -23,15 +23,9 @@ Students will be graded on their ability to:
 
 - Correctly implement the functions [specified below](#programming-tasks)
   - Using private auto-grader tests
-- Follow the [coding](../../guidelines/CODING.md) guidelines
-  - This will be automatically graded using ESLint
-  - For the first homework, this will not be checked
-  - Starting with Homework 2, the autograder will deduct 2.5% if you have any linting errors
-  - See [Linting and Formatting Assignments](../../resources/homework/EDITING.md#linting-and-formatting-assignments)
-- Follow the [bad practice](../../guidelines/BAD_PRACTICES.md), and [testing](../../guidelines/TESTING.md) guidelines
-  - For future assignments, there may be manual grading for these guidelines
-  - Starting with Homework **3**, there may be crediting manual grading
-  - However, by the third homework you can expect these guidelines to be fully enforced
+- Follow the [coding](../../guidelines/CODING.md), [bad practice](../../guidelines/BAD_PRACTICES.md), and [testing](../../guidelines/TESTING.md) guidelines
+  - There will be no grading regarding these rules on this assignment
+  - Starting with Homework 3, there may be crediting manual grading
 - Design full-coverage [unit-tests](#testing) for the functions they implemented
   - For the first homework, this will not be checked
   - Starting with Homework 2, the autograder will calculate and score you based off how well you write your tests
