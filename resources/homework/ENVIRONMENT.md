@@ -2,33 +2,36 @@
 
 Before taking this course, you will need to download various pieces of software. This document will guide you through that process in a beginner-friendly manner. If you have any issues configuring your system, please seek help as soon as possible. You have the internet, office hours, and Campuswire at your disposal.
 
-After you finish installing all the necessary components, you can visit the [editing guide](./EDITING.md#opening-an-assignment-in-vscode) to open a practice assignment.
+## Getting Started
 
-## Index
+**0. (Optional) Install Windows Subsystem for Linux**
 
-- [Runtime](#runtime)
-  - [Installing Node.js and NPM](#installing-nodejs-and-npm)
-- [Version Control: Git](#version-control-git)
-  - [Installing Git](#installing-git)
-- [Text Editor](#text-editor)
+- If you are on Windows, it is worthwhile to consider installing [WSL](https://learn.microsoft.com/en-us/windows/wsl/about)
+- Windows may be hard to configure in the future when you use more advance tools
+- Read more [here](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-  - [Installing VScode](#installing-vscode)
-    - [Extensions](#vscode-extensions)
-    - [Configuration](#configuration)
+**1. Install [Node.js](https://nodejs.org/en/about/) and [NPM](https://docs.npmjs.com/about-npm)**
 
-- TL;DR
-  - [Install Node.js and npm](#installing-nodejs-and-npm)
-  - [Install Git](#installing-git)
-  - [Install VSCode](#installing-vscode)
-    - Watch: <https://www.youtube.com/watch?v=B-s71n0dHUk>
+- Read [Installing Node.js and NPM](#installing-nodejs-and-npm) for instructions
+- Optionally read [About Node.js and NPM](#about-nodejs-and-npm) for details
+- **Note: Please make sure you have at least `node` version 17**
 
-## (Optional) Windows Subsystem for Linux
+**2. Install Git**
 
-If you are on Windows, it is worthwhile to consider installing [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/about). Windows is notoriously difficult to configure with software development applications. So switching now will save you a headache down the road.
+- Read [Installing Git](#installing-git) for instructions
+- Optionally read [About Version Control](#about-version-control) for details
 
-Here is an [installation page](https://learn.microsoft.com/en-us/windows/wsl/install) if you are interested.
+**3. Install VSCode**
 
-## Runtime
+- Read [Installing VSCode](#installing-vscode) for instructions
+- Watch [this video (7m16s)](https://www.youtube.com/watch?v=B-s71n0dHUk) to familiarize yourself with VSCode
+- Alternativley, you use any text editor or IDE. [LunarVim](https://www.lunarvim.org/), [GNU Emacs](https://www.gnu.org/software/emacs/), and [Webstorm](https://www.jetbrains.com/webstorm/) are good options.
+
+**4. Open the First Homework in VSCode**
+
+- Read [Editing: Opening An Assignment in VSCode](./EDITING.md#opening-an-assignment-in-vscode)
+
+## About Node.js and NPM
 
 From the [Wikipedia page on Runtime Systems](https://en.wikipedia.org/wiki/Runtime_system):
 
@@ -38,7 +41,9 @@ In the past, you might have had to install Java on your system. You were install
 
 [Node.js](https://nodejs.org/en/about/) is a popular JavaScript runtime designed for making web applications. It comes bundled with a complete standard library and access to a public repository of millions of third-party packages. It builds upon the JavaScript runtime that is used in Google Chrome.
 
-### Installing Node.js and NPM
+[NPM](https://docs.npmjs.com/about-npm) (Node Package Manager) manages the logistics of distributing Node.js software. It keeps track of your projects dependencies so others can download and use them seamlessly. You can read more on their [about page](https://docs.npmjs.com/about-npm).
+
+## Installing Node.js and NPM
 
 External Tutorials:
 
@@ -67,7 +72,7 @@ To verify Node.js and `npm` installed:
 
 If you do not see both version numbers, you did not install them correctly. You may need to restart.
 
-## Version Control: Git
+## About Version Control
 
 Sometime after the first midterm, there will be a lecture about version/source control. A version control system (VCS) is responsible for managing and tracking all changes to a collection of software files (called a repository). In team environments, it is extraordinarily useful. Each team member has their local copy of the repository and changes for specific files.
 
@@ -85,7 +90,7 @@ It is perfectly OK if Git seems too daunting. In the meantime, it is a good idea
 - [Google Drive](https://www.google.com/drive/download/)
 - [Dropbox](https://www.dropbox.com/desktop)
 
-### Installing Git
+## Installing Git
 
 External Tutorials:
 
@@ -124,7 +129,7 @@ To install `git` on macOS, you should first install [Homebrew](https://brew.sh/)
 git version 2.39.0
 ```
 
-## Text Editor
+## About Text Editors
 
 You are allowed to use any editor that you prefer. This class recommends that you use [VSCode](https://code.visualstudio.com/).
 
@@ -132,7 +137,7 @@ If you are unfamiliar with VSCode, it is recommended that you watch [this video 
 
 The document on [editing homework](./EDITING.md) covers how to extract, open, and modify projects.
 
-### Installing VSCode
+## Installing VSCode
 
 1. Open the [VSCode download page](https://code.visualstudio.com/Download)
 2. Download the installer for your system (click the large button under your system's icon)
@@ -140,7 +145,7 @@ The document on [editing homework](./EDITING.md) covers how to extract, open, an
 3. Run the installer with the default options
 4. After the installer has finished, you can close it
 
-#### VSCode Extensions
+### VSCode Extensions
 
 The majority of [VSCode is written in TypeScript](https://github.com/Microsoft/vscode), so a lot of TS/JS features come standard with the default installation. The following extensions may be useful:
 
@@ -151,6 +156,6 @@ The majority of [VSCode is written in TypeScript](https://github.com/Microsoft/v
 
 You can install these extensions through the [VSCode Extensions tab](https://code.visualstudio.com/docs/editor/extension-marketplace).
 
-#### Configuration
+### Configuration
 
 You can [configure VSCode](https://code.visualstudio.com/docs/getstarted/settings) to your liking (`File -> Preferences -> Settings`). Settings specific to TypeScript can be found by typing `typescript.` in the search bar.

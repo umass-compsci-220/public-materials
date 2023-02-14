@@ -60,28 +60,27 @@ Please do come to office hours for:
 
 | Day           | Time              | Course Staff       | Location/Zoom Link                                                |
 | ------------- | ----------------- | ------------------ | ----------------------------------------------------------------- |
-| **Monday**    | 10:00am - 11:00am | Angela Upreti      | [Zoom](https://umass-amherst.zoom.us/j/98762553166)               |
+| **Monday**    | 10:00am - 11:00am | Marius Minea       | LGRC A261 and [Zoom](https://umass-amherst.zoom.us/j/92493044446)
 | Monday        | 11:30am - 12:30pm | Saurabh Bajaj      | [Zoom](https://umass-amherst.zoom.us/j/99759006093)               |
 | Monday        | 1:00pm - 2:00pm   | John Wordell       | T220                                                              |
 | Monday        | 2:00pm - 3:00pm   | Shrushti Soni      | [Zoom](https://umass-amherst.zoom.us/j/93890755969)               |
 | Monday        | 3:30pm - 4:30pm   | Daisy LaBonte      | [Zoom](https://umass-amherst.zoom.us/j/6286340706)                |
 | Monday        | 5:30pm - 6:30pm   | Vi Doan            | T220                                                              |
 | **Tuesday**   | 9:00am - 10:00am  | Angela Upreti      | [Zoom](https://umass-amherst.zoom.us/j/98762553166)               |
-| Tuesday       | 11:00am - 12:00pm | Marius Minea       | LGRC A261 and [Zoom](https://umass-amherst.zoom.us/j/92493044446) |
 | Tuesday       | 1:00pm - 2:00pm   | Anna Allen         | T220                                                              |
 | Tuesday       | 1:45pm - 2:45pm   | Kyler Schulz       | T220                                                              |
+| Tuesday       | 5:30pm - 6:30pm   | Marius Minea       | LGRC A261 and [Zoom](https://umass-amherst.zoom.us/j/92493044446) |
 | **Wednesday** | 2:30pm - 3:30pm   | Daniel Melanson    | T220                                                              |
 | Wednesday     | 3:30pm - 4:30pm   | Maximilian Kuechen | T220                                                              |
 | Wednesday     | 4:30pm - 5:30pm   | Emeka Ifejiagwa    | [Zoom](https://umass-amherst.zoom.us/j/3476472584)                |
-| Wednesday     | 5:15pm - 6:15pm   | Marius Minea       | LGRC A261 and [Zoom](https://umass-amherst.zoom.us/j/92493044446) |
 | Wednesday     | 5:45pm - 6:45pm   | Shreyan Mallik     | [Zoom](https://umass-amherst.zoom.us/j/4786826178)                |
 | Wednesday     | 8:00pm - 9:00pm   | Daisy LaBonte      | [Zoom](https://umass-amherst.zoom.us/j/6286340706)                |
 | **Thursday**  | 10:00am - 11:00am | Ishita Kumar       | [Zoom](https://umass-amherst.zoom.us/j/94063306225)               |
 | Thursday      | 11:30am - 12:30pm | Saurabh Bajaj      | T220                                                              |
 | Thursday      | 12:30pm - 1:30pm  | Paul Davis         | T220                                                              |
 | Thursday      | 2:00pm - 3:00pm   | Dzung Pham         | T220                                                              |
-| **Friday**    | 12:00pm - 1:00pm  | Catherine Qi       | T220                                                              |
-| Friday        | 12:00pm - 1:00pm  | Rosaline Zhu       | T220                                                              |
+| **Friday**    | 9:00am - 10:00am  | Rosaline Zhu       | T220                                                              |
+| Friday        | 12:00pm - 1:00pm  | Catherine Qi       | T220                                                              |
 | Friday        | 1:15pm - 2:15pm   | Marius Minea       | LGRC A261 and [Zoom](https://umass-amherst.zoom.us/j/92493044446) |
 | Friday        | 2:00pm - 3:00pm   | Kyler Schulz       | T220                                                              |
 

@@ -1,39 +1,48 @@
 # Editing
 
-## Index
-
-- [Opening an Assignment in VSCode](#opening-an-assignment-in-vscode)
-- [Linting and Formatting Assignments](#linting-and-formatting-assignments)
-  - [Linting](#linting)
-  - [Formatting](#formatting)
-
 ## Opening an Assignment in VSCode
 
-1. Open your file browser and navigate to your CS220 folder
+**1. Open your file browser and navigate to your CS220 folder**
 
 - If you do not already have a CS220-specific folder, you should make one so all your files are grouped together. Place it somewhere easy to remember.
 
-2. Inside your CS220 folder, create a new folder for the assignment.
+**2. Inside your CS220 folder, create a new folder for the assignment.**
 
-3. Download the provided ZIP file and place it inside the newly created assignment folder.
+**3. Download the provided ZIP file and place it inside the newly created assignment folder.**
 
 - If you'd like to open the empty assignment, download [this ZIP](../../practice-assignments/01-empty-assignment/01-empty-assignment.zip).
 
-4. Right-click the ZIP archive and extract the contents into the folder.
+**4. Right-click the ZIP archive and extract the contents into the folder.**
 
-5. Open VSCode, click on `File -> Open Folder...`, then navigate to the extracted contents.
+**5. Open VSCode, click on `File -> Open Folder...`, then navigate to the extracted contents.**
 
-6. Once you see the contents of the assignment (the folder containing a `package.json`), click `Open`.
+**6. Once you see the contents of the assignment (the folder containing a `package.json`), click `Open`.**
 
-7. Inside of VSCode, click on the explorer (top of the left sidebar) if it is not already revealed. You should see an `src/` and `.vscode/` folder, `package.json` and `package-lock.json` files, and some other configuration files. If you do not, then you have opened the wrong folder.
+**7. Inside of VSCode, click on the explorer (top of the left sidebar) if it is not already revealed.**
+
+- Your explorer should look very similar to this:
+
+![Explorer](../../media/vscode-explorer.png)
 
 - After opening the folder, you may have received a notification on the bottom right of your screen prompting you to install some extensions. It is recommended that you do.
 
-8. Create a new terminal in VSCode, click on `Terminal -> New Terminal`. You should see a box on the bottom open up. This terminal is where you will execute commands to run, debug, test, and build assignments. **TIP: Use the up/down arrow keys to cycle through command history so you do not have to rewrite commands.**
+**8. Open a VSCode Terminal**
 
-9. Inside the terminal, type the command `npm i` (shorthand for `npm install`), then press enter. You should see some output that mentions the dependencies being installed. After it has finished, you should see a new `node_modules/` folder in the explorer.
+- Click on `Terminal -> New Terminal`.
+- You should see a box on the bottom open up. This terminal is where you will execute commands to run, debug, test, and build assignments.
+- **TIP: Use the up/down arrow keys to cycle through command history so you do not have to rewrite commands.**
+- **TIP: Press tab to auto-complete**
 
-Congratulations, you have successfully opened an assignment! The next step would be to [run the assignment](./RUNNING_AND_DEBUGGING.md#running-an-assignment-in-vscode).
+**9. Run `npm install`**
+
+- Inside the terminal, type the command `npm i` (shorthand for `npm install`), then press enter.
+- You should see some output that mentions the dependencies being installed.
+- After it has finished, you should see a new `node_modules/` folder in the explorer.
+
+**10. Run the assignment**
+
+- Run the command `npm run start` to run the `src/main.ts` file
+- See more instruction is the [running and debugging document](./RUNNING_AND_DEBUGGING.md#running-an-assignment-in-vscode).
 
 ## Linting and Formatting Assignments
 
@@ -45,7 +54,7 @@ From [Wikipedia on Lint](<https://en.wikipedia.org/wiki/Lint_(software)>):
 
 > Lint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs. The term originates from a Unix utility that examined C language source code.
 
-Homework assignments will require that you do not have any linter errors. To check your linter warnings, run the `npm run lint` command in a terminal. It will produce output detailing where and how your code could improve.
+Homework assignments may require that you do not have any linter warnings. To check your linter warnings, use the `npm run lint` command in a terminal. It will produce output detailing where and how your code could improve.
 
 If you do not understand what the warning means, Googling its name may help ("@typescript-eslint/no-unused-vars").
 
