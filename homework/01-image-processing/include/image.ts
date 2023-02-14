@@ -186,7 +186,12 @@ export class Image {
 
     this.saveToPath(temp.name);
 
-    exec(`code --reuse-window ${temp.name}`);
+    if (os.platform() === "darwin") {
+      // macOS
+      exec(`open ${temp.name}`);
+    } else {
+      exec(`code --reuse-window ${temp.name}`);
+    }
   }
 
   saveToPath(filePath: string): void {

@@ -6,6 +6,7 @@ import type { Color, Image } from "../include/image.js";
  * @returns A new image where each pixel has the red channel removed
  */
 export function removeRed(img: Image): Image {
+  // TODO
   return img.copy();
 }
 
@@ -16,6 +17,7 @@ export function removeRed(img: Image): Image {
  *  set as the truncated average of the other two
  */
 export function flipColors(img: Image): Image {
+  // TODO
   return img.copy();
 }
 
@@ -29,6 +31,7 @@ export function flipColors(img: Image): Image {
  * @param func A color transformation function
  */
 export function mapLine(img: Image, lineNo: number, func: (c: Color) => Color): void {
+  // TODO
   return;
 }
 
@@ -40,6 +43,7 @@ export function mapLine(img: Image, lineNo: number, func: (c: Color) => Color): 
  * @param func A color transformation function
  */
 export function imageMap(img: Image, func: (c: Color) => Color): Image {
+  // TODO
   return img.copy();
 }
 
@@ -49,6 +53,7 @@ export function imageMap(img: Image, func: (c: Color) => Color): Image {
  * @returns A new image where each pixel has the red channel removed
  */
 export function mapToGB(img: Image): Image {
+  // TODO
   return img.copy();
 }
 
@@ -59,5 +64,6 @@ export function mapToGB(img: Image): Image {
  *  set as the truncated average of the other two
  */
 export function mapFlipColors(img: Image): Image {
+  // TODO
   return img.copy();
 }

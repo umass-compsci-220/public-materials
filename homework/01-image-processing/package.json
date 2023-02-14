@@ -26,9 +26,8 @@
     "node": ">= 18.0.0"
   },
   "scripts": {
-    "build": "tsc --build",
-    "build:submission": "npm run format && npm run build && node ./zip.js",
-    "build:watch": "tsc --watch",
+    "build:submission": "npm run format && npm run build:test && node ./zip.js",
+    "build:test": "tsc --noEmit",
     "format": "prettier --write ./src/ ./include/",
     "format:check": "prettier --check ./src/",
     "lint": "eslint --no-inline-config --config .eslintrc --max-warnings 0 ./src/",
@@ -36,7 +35,7 @@
     "start": "ts-node ./src/main.ts",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "test:json": "jest --coverage --json"
+    "test:json": "jest --json"
   },
   "type": "module",
   "name": "01-image-processing"
