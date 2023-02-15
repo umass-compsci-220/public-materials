@@ -1,4 +1,4 @@
-import assert from "node:assert";
+import assert from "assert";
 import { COLORS, Image } from "../include/image.js";
 import { flipColors, removeRed } from "./imageProcessing.js";
 
