@@ -1,6 +1,6 @@
 import assert from "assert";
 import { COLORS, Image } from "../include/image.js";
-import { imageMapCoord } from "./imageProcessingHOF";
+import { imageMapCoord } from "./imageProcessingHOF.js";
 
 describe("imageMapCoord", () => {
   function identity(img: Image, x: number, y: number) {
