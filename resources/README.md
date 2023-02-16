@@ -79,7 +79,7 @@ Please do come to office hours for:
 | Thursday      | 11:30am - 12:30pm | Saurabh Bajaj      | T220                                                              |
 | Thursday      | 12:30pm - 1:30pm  | Paul Davis         | T220                                                              |
 | Thursday      | 2:00pm - 3:00pm   | Dzung Pham         | T220                                                              |
-| **Friday**    | 9:00am - 10:00am  | Rosaline Zhu       | T220                                                              |
+| **Friday**    | 8:00am - 9:00am   | Rosaline Zhu       | T220                                                              |
 | Friday        | 12:00pm - 1:00pm  | Catherine Qi       | T220                                                              |
 | Friday        | 1:15pm - 2:15pm   | Marius Minea       | LGRC A261 and [Zoom](https://umass-amherst.zoom.us/j/92493044446) |
 | Friday        | 2:00pm - 3:00pm   | Kyler Schulz       | T220                                                              |
