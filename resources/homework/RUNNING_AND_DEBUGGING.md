@@ -23,7 +23,7 @@ From [Wikipedia on Debuggers](https://en.wikipedia.org/wiki/Debugger)
 
 If you have never used a debugger before, then now is a great time to start. They are extremely useful and can help you save a lot of time.
 
-Provided with each assignment is a VSCode launch configuration to debug your code (`.vscode/launch.json`). To start your debugging your application from `main.ts`, use `Run -> Start Debugging`. This means that VSCode will run your `main.ts` file and suspend execution if it hits a breakpoint or [debugger statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger).
+Provided with each assignment is a VSCode launch configuration to debug your code (`.vscode/launch.json`). To start your debugging your application from `main.ts`, use `Run -> Debug main`. This means that VSCode will run your `main.ts` file and suspend execution if it hits a breakpoint or [debugger statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger). To debug your tests, use `Run -> Debug tests`.
 
 If you are not familiar with how to use a debugger, then watching some of these videos may help:
 
