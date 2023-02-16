@@ -17,6 +17,8 @@
     "plugin:jest/recommended",
     "prettier"
   ],
+  "noInlineConfig": true,
+  "ignorePatterns": ["main.ts"],
   "rules": {
     "jest/expect-expect": "off",
     "jest/no-disabled-tests": "off",
