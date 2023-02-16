@@ -11,7 +11,7 @@
       "type": "node-terminal"
     },
     {
-      "command": "npm start",
+      "command": "npm test",
       "name": "Debug tests",
       "request": "launch",
       "type": "node-terminal"
