@@ -139,7 +139,7 @@ export function isGrayish(p: Color): boolean {
 }
 ```
 
-The result should be true if and only if the difference between the maximum and minimum color channel value is at most 85 (one third of 255).
+The result should be true if and only if the difference between the maximum and minimum color channel value is at most 85 (one third of 255). You may assume that `p` is a valid color according to the `Image` library.
 
 **7. Write a function called `makeGrayish`:**
 
