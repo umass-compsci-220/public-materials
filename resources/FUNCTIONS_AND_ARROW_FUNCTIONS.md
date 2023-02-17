@@ -198,7 +198,7 @@ foo(() => console.log("Hello, world!"));
 
 When using arrow functions as arguments to other functions type decorator can be omitted. As the compiler implicitly understands the type of the arguments.
 
-```
+```ts
 function doubleApply(f: (x: number) => number, x: number): number {
   return f(f(x));
 }
