@@ -95,9 +95,11 @@ function myFunction(): number {
 }
 
 double(myFunction); // 8
+```
 
-// Functions passed as arguments (callbacks) can be used like any other function (call it, pass it arguments, use its result, etc.)
+Functions passed as arguments (callbacks) can be used like any other function. We can call them, pass them arguments, and use their result.
 
+```ts
 function doubleApply(f: (x: number) => number, x: number): number {
   return f(f(x));
 }
