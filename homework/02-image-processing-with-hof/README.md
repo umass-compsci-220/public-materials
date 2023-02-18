@@ -1,6 +1,7 @@
 # Image Processing with HOF
 
 - Please download the project [here](./02-image-processing-with-hof.zip).
+- Run `npm install` in the project directory.
 
 ## Overview
 
