@@ -97,6 +97,20 @@ function myFunction(): number {
 double(myFunction); // 8
 ```
 
+Functions passed as arguments (callbacks) can be used like any other function. We can call them, pass them arguments, and use their result.
+
+```ts
+function doubleApply(f: (x: number) => number, x: number): number {
+  return f(f(x));
+}
+
+function func(x: number): number {
+  return x * 2;
+}
+
+doubleApply(func, 6); // 24
+```
+
 They can be returned on their own:
 
 ```ts
@@ -144,8 +158,7 @@ You will find that function expressions are extremely helpful tools for generali
 ```ts
 // Syntax: ([identifier[, identifier[...]]]) => { statement-list }
 
-// firstArrowFunctionVariant(x: number, y: number): number
-const firstArrowFunctionVariant = (x, y) => {
+const firstArrowFunctionVariant = (x: number, y: number) => {
   return x + y;
 };
 ```
@@ -183,4 +196,16 @@ foo(() => {
 });
 
 foo(() => console.log("Hello, world!"));
+```
+
+When using arrow functions as arguments to other functions the type decorator can be omitted. As the compiler implicitly understands the type of the arguments.
+
+```ts
+function doubleApply(f: (x: number) => number, x: number): number {
+  return f(f(x));
+}
+
+// The signature of `doubleApply` requires that we pass a function that takes a number and returns a number
+// Our arrow function does not need type decorators, as the compiler understands that `y` must be a number.
+doubleApply(y => y * 2, 3); // 12
 ```
