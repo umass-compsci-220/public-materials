@@ -33,4 +33,4 @@ The design of your tests should follow the patterns demonstrated in the [first h
   - Writing some comments to describe what a tests is trying to accomplish
 - Writing reusable testing functions for cleaner code
 - Writing atomic tests (do not depend on each other; do not cause any side effects on shared data)
-- Writing tests that cover edge cases (weird (but valid) sized/shaped input, input close to a bound, input on a bound, input in the middle, etc.)
+- Writing tests that cover a variety of cases (weird (but valid) sized/shaped input, input close to a bound, input on a bound, input in the middle, etc.)
