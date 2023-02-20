@@ -5,7 +5,6 @@ This document lists common programming patterns that should be avoided. Any code
 It is okay to ignore cleanliness and use these anti-patterns to get a working solution. But afterwords, you should go back and tune-up your code.
 
 - [Defining Mutable Unchanged Variables](#defining-mutable-unchanged-variables)
-- [Defining Unnecessary Variables](#defining-unnecessary-variables)
 - [Declaring Variables in the Wrong Scope](#declaring-variables-in-the-wrong-scope)
 - [Declaring Variables Far From Relevant Use](#declaring-variables-far-from-relevant-use)
 - [Writing Unnecessary Return Checks](#writing-unnecessary-return-checks)
@@ -47,36 +46,6 @@ const obj = { x: 1 };
 
 obj.x = 1; // Completely valid
 ```
-
-## Defining Unnecessary Variables
-
-Variables are useful tools to help keep track of the state. However, like any good tool, we should not overuse them. Make sure your variables have a clear purpose. Functions take expressions as parameters, not variables. Defining a variable just to immediately pass it into a function might not always be optimal. The same principle applies to return statements.
-
-Instead of:
-
-```ts
-const m = new Map<string, string>();
-for ( /* ... */ ) {
-  let x = someFunction();
-  anotherFunction(m, x);
-}
-
-const a = x + y;
-return a;
-```
-
-Try this:
-
-```ts
-const m = new Map<string, string>();
-for ( /* ... */ ) {
-  anotherFunction(m, someFunction());
-}
-
-return x + y;
-```
-
-You now fit more relevant code on a single line - and you are no longer cluttering your scope with variables that are only used a single time. However, sometimes it is helpful to use variables to name parameters or parts of a complex expression. Use your best judgment to decide what would make the function more readable.
 
 ## Declaring Variables in the Wrong Scope
 
