@@ -26,9 +26,11 @@ To calculate your coverage see the [homework testing document](../resources/home
 
 The design of your tests should follow the patterns demonstrated in the [first homework's provided tests](../homework/01-image-processing/src/imageProcessing.test.ts). Your tests may be manually graded on your ability to follow these practices, and others, as listed below:
 
-- Using `describe` blocks for group-related tests.
-- Using descriptive and insightful names for `describe`,`it`, `test`, and `assert` statements
-- Providing context to assertions ("Expected X, but got Y"; unnecessary if using `expect`)
+- Using `describe` blocks for group-related tests
+- Using descriptive and insightful names for `describe`,`it`, and `test` blocks
+- Providing context to assertions ("Expected X, but got Y"; unnecessary if using `expect`). This can be done by:
+  - Providing a message to assert: `assert(negate(10) === -10, "Given 10, -10 should be returned");`
+  - Writing some comments to describe what a tests is trying to accomplish
 - Writing reusable testing functions for cleaner code
 - Writing atomic tests (do not depend on each other; do not cause any side effects on shared data)
-- Writing tests that cover edge cases (weird (but valid) sized/shaped input, input close to a bound, input on a bound, etc.)
+- Writing tests that cover edge cases (weird (but valid) sized/shaped input, input close to a bound, input on a bound, input in the middle, etc.)
