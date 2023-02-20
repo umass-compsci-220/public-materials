@@ -128,7 +128,7 @@ const theNumberOne = aFunction(); // The number one
 
 ## Function Expressions and Anonymous Functions
 
-There are other ways to create functions in TypeScript without using the function definition syntax shown above. You can create nameless functions using function expressions. Function expressions have similar syntax to function definitions; however, we do not specify a name to the function. Instead, sometimes we name the function using a variable.
+There are other ways to create functions in TypeScript without using the function definition syntax shown above. You can create nameless functions using function expressions. They work just like any other function, but can be unnamed. This enables us to closely group related logic.
 
 ```ts
 const aFunction = function () {};
@@ -151,7 +151,26 @@ foo(function () {
 ```
 
 Notice that we created a function directly inside the argument list when we called foo, we did not name our function in any way. Such a function is called an anonymous function. It is considered anonymous because it does not have a name.
-Arrow Functions
+
+```ts
+const arr = [1, 2, 3];
+
+// Using a function definition
+function double(x: number): number {
+  return x * 2;
+}
+
+arr.map(double); // [2, 4, 6]
+
+// Improved: Using function expressions
+arr.map(function (x: number) {
+  return x * 2;
+});
+```
+
+In the example above, we had to define an entirely new helper function to double a series of numbers. This definition may get lost in the sea of other functions we may need to create. In the improved version we use a function expression to group the operation with the data it is operating on. This is more clear what we are doing with the data. It does not make sense to create an entirely new function to express a very basic operation (multiplication by two).
+
+## Arrow Functions
 
 You will find that function expressions are extremely helpful tools for generalizing your code. You will find yourself using them frequently. Because of this, the JavaScript standard (ECMAScript 2015) introduced arrow functions as a less cumbersome way of writing function expressions. The first variant of arrow functions keeps the regular syntax for a function body. That is an ordered list of statements.
 
