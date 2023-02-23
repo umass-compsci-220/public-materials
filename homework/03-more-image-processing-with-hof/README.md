@@ -19,6 +19,7 @@ Students will be graded on their ability to:
 - Correctly implement the functions [specified below](#programming-tasks)
   - Using private auto-grader tests
 - Resolve all linter warnings
+  - **There will be credited grading for this (2.5%)**
   - See the section on [linting and formatting assignments](../../resources/homework/EDITING.md#linting-and-formatting-assignments) for more details
 - Follow the [coding](../../guidelines/CODING.md), [bad practice](../../guidelines/BAD_PRACTICES.md) and [testing](../../guidelines/TESTING.md) guidelines
   - **There may be manual grading regarding this guidelines from this point forward**
@@ -27,6 +28,7 @@ Students will be graded on their ability to:
   - We are not out to get you, these guidelines are here to help you avoid problematic code
   - As long as you are making an attempt to follow the guidelines, you will be fine
 - Design full-coverage [unit-tests](#testing) for the functions they implemented
+  - **There will be credited grading for this (12.5%)**
   - See the [testing guidelines](../../guidelines/TESTING.md#coverage) on coverage for mor details
 
 ### Resources
