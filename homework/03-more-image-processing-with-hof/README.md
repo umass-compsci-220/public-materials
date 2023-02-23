@@ -91,7 +91,7 @@ export function pixelBlur(img: Image, x: number, y: number): Color {
 }
 ```
 
-The result is the blurred value of the pixel at coordinates $(x, y)$, assumed to be valid for the image. Each color channel of the resulting pixel should be the rounded mean of the same channels of the $(x, y)$ pixel itself and its neighbors in `img`. Two distinct pixels are neighbors if both their x-coordinates and y-coordinates differ by at most 1 in absolute value. **Avoid [code duplication](../../guidelines/CODING.md#code-duplication).**
+The result is the blurred value of the pixel at coordinates $(x, y)$, assumed to be valid for the image. Each color channel of the resulting pixel should be the truncated mean of the same channels of the $(x, y)$ pixel itself and its neighbors in `img`. Two distinct pixels are neighbors if both their x-coordinates and y-coordinates differ by at most 1 in absolute value. **Avoid [code duplication](../../guidelines/CODING.md#code-duplication).**
 
 5. Write a function called `imageBlur`:
 
