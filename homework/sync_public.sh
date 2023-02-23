@@ -1,8 +1,9 @@
 #!/bin/bash
 
 titles=(
-  "01-image-processing"
-  "02-image-processing-with-hof"
+  # "01-image-processing"
+  # "02-image-processing-with-hof"
+  "03-more-image-processing-with-hof"
 )
 
 shopt -s dotglob
