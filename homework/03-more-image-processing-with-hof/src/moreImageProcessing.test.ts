@@ -19,6 +19,8 @@ describe("lineBlur3p", () => {
       [200, 0, 0],
     ]);
 
+    lineBlur3p(img);
+
     // red: floor((0 + 100 + 200) / 3) = 100
     // blue: floor((0 + 0 + 0) / 3) = 0
     // green: floor((0, 10, 0) / 3) = 3
@@ -51,3 +53,6 @@ describe("composeFunctions", () => {
 describe("combineThree", () => {
   // Tests for lineBlur3p go here
 });
+function lineBlur3p(img: Image) {
+  throw new Error("Function not implemented.");
+}
