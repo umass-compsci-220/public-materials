@@ -41,8 +41,6 @@ You must write tests for all your functions, following the principles used so fa
 
 All interfaces are the same as the previous assignments. Please review the ["Getting Started" section](../01-image-processing/README.md#getting-started) from Homework 1 if necessary.
 
-Similar to [Homework 2](../02-image-processing-with-hof/README.md), you have been given minimal template code. It is up to you to write it yourself. Use the patterns showcased in [Homework 1](../01-image-processing/README.md).
-
 ## Programming Tasks
 
 If you are having trouble reading the specification, please go to office hours or ask a question on Campuswire.
