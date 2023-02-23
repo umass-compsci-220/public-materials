@@ -1,5 +1,5 @@
 import { Color, COLORS, Image } from "../include/image.js";
-
+import { lineBlur3p } from "./moreImageProcessing.js";
 // Creates a single row image containing the specified colors
 function createRow(row: Color[]): Image {
   const img = Image.create(row.length, 1, COLORS.BLACK);
@@ -19,7 +19,7 @@ describe("lineBlur3p", () => {
       [200, 0, 0],
     ]);
 
-    lineBlur3p(img);
+    lineBlur3p(img, 0);
 
     // red: floor((0 + 100 + 200) / 3) = 100
     // blue: floor((0 + 0 + 0) / 3) = 0
@@ -53,6 +53,3 @@ describe("composeFunctions", () => {
 describe("combineThree", () => {
   // Tests for lineBlur3p go here
 });
-function lineBlur3p(img: Image) {
-  throw new Error("Function not implemented.");
-}
