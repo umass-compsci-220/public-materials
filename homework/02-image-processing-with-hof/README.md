@@ -99,10 +99,10 @@ export function mapWindow(
 }
 ```
 
-**The result is a new image.** In it, the value of the pixel at $(x, y)$ is either:
+**The result is a new image.** In it, the value of the pixel at $(x, y)$ with color $c$ is either:
 
-1. The value `func(c)`, where `c` is the original pixel's color, if the pixel coordinates $(x, y)$ are in the interval $[x_{min}, x_{max}]$ and $[y_{min}, y_{max}]$ respectively (inclusive)
-2. Identical to the original pixel otherwise.
+1. The value `func(c)` if the pixel coordinates are in the interval $[x_{min}, x_{max}]$ and $[y_{min}, y_{max}]$ respectively (inclusive)
+2. $c$ otherwise
 
 **Use `imageMapIf`.** You may assume that the second and third argument are always two-element number arrays. The behavior otherwise in not specificed. You could write an `assert` statement to ensure this is the case; however, this is not required. 
 
