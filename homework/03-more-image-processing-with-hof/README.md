@@ -21,7 +21,7 @@ Students will be graded on their ability to:
 - Resolve all linter warnings
   - See the section on [linting and formatting assignments](../../resources/homework/EDITING.md#linting-and-formatting-assignments) for more details
 - Follow the [coding](../../guidelines/CODING.md), [bad practice](../../guidelines/BAD_PRACTICES.md) and [testing](../../guidelines/TESTING.md) guidelines
-  - There may be manual grading regarding this guidelines from this point forward
+  - **There may be manual grading regarding this guidelines from this point forward**
   - Manual grading will be out of 10-15 points, resulting in a final HW score out of 110/115
   - This assignment puts extra emphasis on **avoiding [code duplication](../../guidelines/CODING.md#code-duplication)**
   - We are not out to get you, these guidelines are here to help you avoid problematic code
