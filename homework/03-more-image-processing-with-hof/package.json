@@ -21,12 +21,9 @@
     "@types/pngjs": "^6.0.1",
     "@types/tmp": "^0.2.3"
   },
-  "engines": {
-    "node": ">= 18.0.0"
-  },
   "scripts": {
-    "build:submission": "npm run format && npm run build:test && node ./zip.js",
-    "build:test": "tsc --noEmit",
+    "build": "tsc",
+    "build:submission": "npm run format && npm run build && node ./zip.js",
     "format": "prettier --config .prettierrc --write src/ include/",
     "format:check": "prettier --config .prettierrc --check src/",
     "lint": "eslint --config .eslintrc --max-warnings 0 src/",

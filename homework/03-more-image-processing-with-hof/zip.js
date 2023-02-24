@@ -1,5 +1,4 @@
 import archiver from "archiver";
-import { execSync } from "child_process";
 import { createWriteStream, readFileSync, rmSync } from "fs";
 import { join } from "path";
 
@@ -14,12 +13,11 @@ const archive = archiver("zip", {
 archive.pipe(output);
 archive.directory("src/", "ts/");
 
-execSync("node_modules/.bin/tsc -p ./tsconfig.json --outDir js/");
-archive.glob("*.js", { cwd: join(".", "js", "src") }, { prefix: "js/" });
+archive.glob("*.js", { cwd: join(".", "out", "src") }, { prefix: "js/" });
 
 archive.on("finish", () => {
   output.close();
-  rmSync("js/", { recursive: true, force: true });
+  rmSync(join(".", "out"), { recursive: true, force: true });
   console.log("Successfully zipped submission: " + zipPath);
 });
 
