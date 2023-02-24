@@ -74,8 +74,9 @@ function expectColorToBeCloseTo(actual: Color, expected: Color, error = 1) {
   [0, 1, 2].forEach(i => expect(Math.abs(actual[i] - expected[i])).toBeLessThanOrEqual(error));
 }
 
-const actual = img.getPixel(0, 0); // Example: [0, 0, 0]
-expectColorToBeCloseTo(img.getPixel(0, 0), [1, 1, 1]); // Will not error
+expectColorToBeCloseTo([0, 0, 0], [1, 1, 1]); // Will not error
+expectColorToBeCloseTo([0, 0, 0], [0, 0, 0]); // Will not error
+expectColorToBeCloseTo([0, 0, 0], [0, 0, 2]); // Will error
 ```
 
 You may need to use the function above when writing your own tests.
