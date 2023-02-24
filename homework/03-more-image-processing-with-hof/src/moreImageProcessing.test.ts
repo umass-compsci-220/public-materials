@@ -23,7 +23,7 @@ describe("lineBlur3p", () => {
 
     // red: floor((0 + 100 + 200) / 3) = 100
     // blue: floor((0 + 0 + 0) / 3) = 0
-    // green: floor((0, 10, 0) / 3) = 3
+    // green: floor((0 + 10 + 0) / 3) = 3
     expect(img.getPixel(1, 0)).toEqual([100, 0, 3]);
   });
 
