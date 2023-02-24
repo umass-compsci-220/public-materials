@@ -39,6 +39,47 @@ Please use the [resources document](../../resources/README.md) if you are stuck.
 
 You must write tests for all your functions, following the principles used so far.
 
+Arithmetic with the `number` type produces some non-obvious results:
+
+```ts
+console.log(0.1 + 0.2); // .30000000000000004 🤨
+```
+
+This is a common issue in programming languages that use [floating point numbers](https://en.wikipedia.org/wiki/Floating-point_arithmetic). [This website](https://floating-point-gui.de/) gives a great overview of how floating point numbers work and why this behavior exists.
+
+Throughout this homework, you will be doing arithmetic with fractional values (finding the (weighted) mean). Depending on the order of the operations, you may get a different result:
+
+```t
+console.log((254 + 254 + 254) / 3); // 254
+console.log(((1 / 3) * 254) + ((1 / 3) * 254) + ((1 / 3) * 254)); // 253.99999999999997
+```
+
+Hopefully it is clear to see that this can become a problem because we truncate any decimal remainder in our calculations. To reconcile this issue we need to change how we define "equality" between two `Color` values. Instead of strictly checking that each channel is exactly what it should be:
+
+```ts
+const actual = img.getPixel(0, 0);
+assert(actual[0] === 0);
+assert(actual[1] === 0);
+assert(actual[2] === 0);
+
+// or
+
+expect(img.getPixel(0, 0)).toEqual([0, 0, 0]);
+```
+
+We should accept a precision of error (in this case default to less than 2) between two values.
+
+```ts
+function expectColorToBeCloseTo(actual: Color, expected: Color, error = 2) {
+  [0, 1, 2].forEach(i => expect(Math.abs(actual[i] - expected[i])).toBeLessThan(error));
+}
+
+const actual = img.getPixel(0, 0); // Example: [0, 0, 0]
+expectColorToBeCloseTo(img.getPixel(0, 0), [1, 1, 1]); // Will not error
+```
+
+You may need to use the function above when writing your own tests.
+
 ## Getting Started
 
 All interfaces are the same as the previous assignments. Please review the ["Getting Started" section](../01-image-processing/README.md#getting-started) from Homework 1 if necessary.
