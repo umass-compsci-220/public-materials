@@ -67,7 +67,7 @@ assert(actual[2] === 0);
 expect(img.getPixel(0, 0)).toEqual([0, 0, 0]);
 ```
 
-We should accept a precision of error (in this case default to less than or equal to 1) between two values.
+We should accept a precision of error (in this case default to less than or equal to 1) between two values:
 
 ```ts
 function expectColorToBeCloseTo(actual: Color, expected: Color, error = 1) {

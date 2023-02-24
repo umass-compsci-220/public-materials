@@ -11,6 +11,11 @@ function createRow(row: Color[]): Image {
   return img;
 }
 
+// Checks to see if a color is equal to another one with an error of 1 (default)
+function expectColorToBeCloseTo(actual: Color, expected: Color, error = 1) {
+  [0, 1, 2].forEach(i => expect(Math.abs(actual[i] - expected[i])).toBeLessThanOrEqual(error));
+}
+
 describe("lineBlur3p", () => {
   it("correctly calculates independent channels", () => {
     const img = createRow([
@@ -24,7 +29,7 @@ describe("lineBlur3p", () => {
     // red: floor((0 + 100 + 200) / 3) = 100
     // blue: floor((0 + 0 + 0) / 3) = 0
     // green: floor((0 + 10 + 0) / 3) = 3
-    expect(img.getPixel(1, 0)).toEqual([100, 0, 3]);
+    expectColorToBeCloseTo(img.getPixel(1, 0), [100, 0, 3]);
   });
 
   // More tests for lineBlur3p go here
