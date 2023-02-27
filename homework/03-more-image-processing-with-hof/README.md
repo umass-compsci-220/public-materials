@@ -93,7 +93,7 @@ If you are having trouble reading the specification, please go to office hours o
 
 This assignment puts extra emphasis on avoiding code duplication. Many of the following functions have similar operations and conditions. You should try writing helper methods to use across all of them . **Submissions that write if-statements for each case (whether or not a neighbor is present, how many neighbors are exactly present, etc.) could receive point deductions.** If you have a series of if-statements with _similar conditions or similar bodies_, or separate functions with near-identical bodies, consider an alternative approach.
 
-**It is okay to complete a function with some code duplication first, then reevaluate your approach.** It is never a good idea to prematurely optimize or refactor your code. Focus on writing something that works, then shift your focus to making that solution cleaner and more efficient.
+Try to avoid repetition from the get-go, don't delay it to "after my code works". **Read the descriptions of all the tasks before you start coding.**
 
 1. Write a function called `lineBlur3p`:
 
