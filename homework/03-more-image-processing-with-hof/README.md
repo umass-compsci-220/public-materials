@@ -39,6 +39,8 @@ Please use the [resources document](../../resources/README.md) if you are stuck.
 
 You must write tests for all your functions, following the principles used so far.
 
+### Changing How We Compare Colors
+
 Arithmetic with the `number` type produces some non-obvious results:
 
 ```ts
