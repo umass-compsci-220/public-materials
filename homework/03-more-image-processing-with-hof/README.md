@@ -93,7 +93,7 @@ If you are having trouble reading the specification, please go to office hours o
 
 This assignment puts extra emphasis on avoiding code duplication. Many of the following functions have similar operations and conditions. In `lineBlur3p`, you are tasked with blurring a line by computing the weighted average between a pixel and its horizontal neighbors which are at most 1 away. In `lineBlur5p`, you use horizontal neighbors which are up to 2 away. You should try writing helper functions to use across these two. Imagine if you were tasked with writing `lineBlur25p` (you are not, just consider the scenario), which used neighbors up to 12 away. After properly abstracting `lineBlur3p` and `lineBlur5p`, creating `lineBlur25p` should not require much effort.
 
-Similar story with `pixelBlur`, it uses pixels whose coordinates differ by at most 1 in absolute value. Imagine if you were to write a function that used pixels whose coordinates differ by at most 50 in absolute. Would your code be able to support that without much effort?
+Similar story with `pixelBlur`, it uses pixels whose coordinates differ by at most 1 in absolute value. Imagine if you were to write a function that used pixels whose coordinates differ by at most 50 in absolute value. Would your code be able to support that without much effort?
 
 **Submissions that do not attempt to avoid code duplication may receive manual grading point deductions (~12%).** If you have a series of if-statements with similar conditions or similar bodies, or separate functions with near-identical bodies, consider an alternative approach. If-statements are allowed, but do not abuse them.
 
