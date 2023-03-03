@@ -1,6 +1,7 @@
 # More Image Processing with HOF
 
-Please download the project [here](./03-more-image-processing-with-hof.zip).
+- Please download the project [here](./03-more-image-processing-with-hof.zip)
+- **This homework is a step up from HW1 and HW2, do not start on the final day**
 
 ## Overview
 
