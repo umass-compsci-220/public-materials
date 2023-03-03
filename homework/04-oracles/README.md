@@ -132,7 +132,9 @@ function randomInt(min: number, max: number): number {
 2. Implement `stableMatchingOracle` inside of [`oracles.ts`](./src/oracles.ts).
 
 ```ts
-export function stableMatchingOracle(f: (companies: number[][], candidates: number[][]) => Hire[]): void;
+export function stableMatchingOracle(f: (companies: number[][], candidates: number[][]) => Hire[]): void {
+  // TODO
+}
 ```
 
 This function is an oracle for the Stable Matching Problem. If `f` is a valid solution of the stable matching problem, it should do nothing (the return type is `void`). If `f` is an invalid solution, it should throw an `AssertionError` (use `assert(...)`).
@@ -169,7 +171,9 @@ An `Offer` is an object with three fields that represents a proposal from one pa
 1. Implement `stableMatchingRunOracle` inside of [`oracles.ts`](./src/oracles.ts).
 
 ```ts
-stableMatchingRunOracle(f: (companies: number[][], candidates: number[][]) => Run): void
+export function stableMatchingRunOracle(f: (companies: number[][], candidates: number[][]) => Run): void {
+  // TODO
+}
 ```
 
 This function should test the provided implementation of stable matching. It should check that:
