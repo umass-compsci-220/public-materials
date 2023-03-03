@@ -3,7 +3,8 @@
 titles=(
   # "01-image-processing"
   # "02-image-processing-with-hof"
-  "03-more-image-processing-with-hof"
+  "03-more-image-processing-with-hof",
+  "04-oracles"
 )
 
 shopt -s dotglob

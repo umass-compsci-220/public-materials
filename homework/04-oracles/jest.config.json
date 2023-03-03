@@ -1,0 +1,25 @@
+{
+  "collectCoverageFrom": ["<rootDir>/src/!(main).ts"],
+  "coverageReporters": ["json-summary", "text"],
+  "coverageThreshold": {
+    "global": {
+      "branches": 50,
+      "functions": 100,
+      "lines": 80,
+      "statements": 80
+    }
+  },
+  "moduleNameMapper": {
+    "^(\\.{1,2}/.*)\\.js$": "$1"
+  },
+  "preset": "ts-jest/presets/default-esm",
+  "testPathIgnorePatterns": ["<rootDir>/out/", "<rootDir>/node_modules/"],
+  "transform": {
+    "^.+\\.tsx?$": [
+      "ts-jest",
+      {
+        "useESM": true
+      }
+    ]
+  }
+}
