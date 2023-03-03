@@ -83,7 +83,7 @@ function hasMembership(userId: string): boolean {}
 
 Comments should be enough for an unfamiliar reader to understand the code. Reasonably complex statements should be documented as necessary. Such as statements that use a formula or algorithm. Explicitly note any side effects or dependencies on functions.
 
-You do not need to comment every line. But you could use a [TSDoc](https://tsdoc.org/) comment on important functions to explain arguments, results, and purpose. 
+You do not need to comment every line. But you could use a [TSDoc](https://tsdoc.org/) comment on important functions to explain arguments, results, and purpose.
 
 ```ts
 /**
