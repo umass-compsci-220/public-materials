@@ -32,5 +32,10 @@ The design of your tests should follow the patterns demonstrated in the [first h
   - Providing a message to assert: `assert(negate(10) === -10, "Given 10, -10 should be returned");`
   - Writing some comments to describe what a tests is trying to accomplish
 - Writing reusable testing functions for cleaner code
-- Writing atomic tests (do not depend on each other; do not cause any side effects on shared data)
-- Writing tests that cover a variety of cases (weird (but valid) sized/shaped input, input close to a bound, input on a bound, input in the middle, etc.)
+  - Tests should not contain significant amounts of code duplication
+  - If you need to make an array of random elements for numerous tests, then make a function called `constructRandomArray`
+- Writing atomic tests
+  - Tests should not cause any side effects on shared data (each test should isolate the data it works with)
+  - Tests should not depend on each other (their order of execution is nondeterministic)
+- Writing tests that cover a variety of cases
+  - Weird (but valid) sized/shaped input, input close to a bound, input on a bound, input in the middle, etc.)
