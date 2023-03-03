@@ -103,10 +103,12 @@ Their implementations are [obfuscated](https://en.wikipedia.org/wiki/Obfuscation
 
 ### Part A
 
-1. Write a function with the following signature:
+1. Write a function called `generateInput`:
 
 ```ts
-generateInput(n: number): number[][]
+export function generateInput(n: number): number[][] {
+  // TODO
+}
 ```
 
 This function should produce an $n \times n$ array of preferences for companies or candidates. This will be used as input for testing a given solution. Your function should generate **random values** in order to test a given solution with a broad spectrum of input.
