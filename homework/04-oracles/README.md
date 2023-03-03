@@ -183,20 +183,20 @@ Additionally, you should update [`oracle.test.ts`](./src/oracle.test.ts) to skip
 
 ```ts
 // Before
-describe("Part 1: stableMatchingOracle", () => {
+describe("Part A: stableMatchingOracle", () => {
   /* ... */
 });
 
-describe.skip("Part 2: stableMatchingRunOracle", () => {
+describe.skip("Part B: stableMatchingRunOracle", () => {
   /* ... */
 });
 
 // After
-describe.skip("Part 1: stableMatchingOracle", () => {
+describe.skip("Part A: stableMatchingOracle", () => {
   /* ... */
 });
 
-describe("Part 2: stableMatchingRunOracle", () => {
+describe("Part B: stableMatchingRunOracle", () => {
   /* ... */
 });
 ```
