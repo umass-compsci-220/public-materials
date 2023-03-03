@@ -1,6 +1,6 @@
 # Oracles
 
-- Please download the project [here](./04-oracles.zip).
+- Please download the project [here](./04-oracles.zip)
 - This project is divided into two homeworks (HW4a, HW4b)
   - Both carry the weight of a full homework
 
@@ -21,6 +21,7 @@ This homework is divided into two assignments (with separate due dates). You wil
 ### Student Expectations
 
 Students will be graded on their ability to:
+
 - Correctly implement the functions [specified below](#programming-tasks)
   - Using **public** auto-grader tests
   - **There are no private autograder tests**
@@ -138,7 +139,7 @@ This function is an oracle for the Stable Matching Problem. If `f` is a valid so
 
 A template for the `stableMatchingOracle` function is given inside of [`oracles.ts`](./src/oracles.ts). To do well, you should carefully consider all the different ways in which the output could be invalid for the original problem statement. You may assume the output is of the right type, `Hire[]`, but nothing else.
 
-As mentioned in the [student expectations](#student-expectations), you should be employing proper coding abstractions. When implementing this function, look at all the related data a company or candidate has. What are the common operations and queries that you might do on this data? Is there any way to group this together or pre-compute anything? Using object may be helpful. Think before you code. 
+As mentioned in the [student expectations](#student-expectations), you should be employing proper coding abstractions (avoid code duplication). When implementing this function, look at all the related data a company or candidate has. What are the common operations and queries that you might do on this data? Is there any way to group this together or pre-compute anything? **Using object may be helpful.** Think before you code.
 
 ### Part B
 
