@@ -36,19 +36,19 @@ describe("lineBlur3p", () => {
 });
 
 describe("lineBlur5p", () => {
-  // Tests for lineBlur3p go here
+  // Tests for lineBlur5p go here
 });
 
 describe("blurLines", () => {
-  // Tests for lineBlur3p go here
+  // Tests for blurLines go here
 });
 
 describe("pixelBlur", () => {
-  // Tests for lineBlur3p go here
+  // Tests for pixelBlur go here
 });
 
 describe("imageBlur", () => {
-  // Tests for lineBlur3p go here
+  // Tests for imageBlur go here
 });
 
 describe("composeFunctions", () => {

@@ -24,7 +24,7 @@
   "scripts": {
     "build": "tsc",
     "build:submission": "npm run format && npm run build && node ./zip.js",
-    "format": "prettier --config .prettierrc --write src/ include/",
+    "format": "prettier --config .prettierrc --write src/",
     "format:check": "prettier --config .prettierrc --check src/",
     "lint": "eslint --config .eslintrc --max-warnings 0 src/",
     "lint:fix": "eslint --config .eslintrc --fix src/",

@@ -23,6 +23,8 @@
     "jest/expect-expect": "off",
     "jest/no-disabled-tests": "off",
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "warn"
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": "warn",
+    "@typescript-eslint/no-unnecessary-condition": "warn"
   }
 }

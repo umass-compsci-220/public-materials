@@ -4,19 +4,20 @@ import fs from "fs";
 import os from "os";
 import path from "path";
 
-import tmp from "tmp";
 import { PNG } from "pngjs";
+import tmp from "tmp";
 
 const IMAGES_FOLDER = path.resolve(process.cwd(), "images");
 const IMAGE_GALLERY = fs.readdirSync(IMAGES_FOLDER).map(p => path.join(IMAGES_FOLDER, p));
 type ImageName = "art" | "bike" | "car" | "dog" | "food" | "landscape" | "pencils" | "pottery" | "tomato";
 
-function assertSupportedType(filePath: string) {
-  assert(filePath.endsWith("png"), "Image must end in `.png`.");
-}
-
 const CHANNEL_NAMES = ["red", "green", "blue"];
-function assertValidColor(color: Color) {
+
+/**
+ * Throws an error if `color` is not a Color
+ * @param color An array
+ */
+function assertValidColor(color: Color): void {
   assert(color.length === 3);
   CHANNEL_NAMES.forEach((channel, i) => {
     assert(Number.isInteger(color[i]), `The ${channel} channel of the color must be an integer.`);
@@ -25,7 +26,12 @@ function assertValidColor(color: Color) {
   });
 }
 
-function assertValidWidthAndHeight(width: number, height: number) {
+/**
+ * Throws an error if `width` or `height` are invalid image dimensions
+ * @param width A number
+ * @param height A number
+ */
+function assertValidWidthAndHeight(width: number, height: number): void {
   assert(Number.isInteger(width), "Image width must be an integer.");
   assert(Number.isInteger(height), "Image height must be an integer.");
 
@@ -68,7 +74,7 @@ export class Image {
    * @returns The file represented as an `Image` object.
    */
   static loadImageFromFile(filePath: string): Image {
-    assertSupportedType(filePath);
+    assert(filePath.endsWith(".png"), "Only `.png` files are supported.");
 
     if (!fs.existsSync(filePath)) {
       throw new Error(`Unable to locate file: \`${filePath}\``);
@@ -179,8 +185,13 @@ export class Image {
     this.saveToPath(path.resolve(images_out, fileName + ".png"));
   }
 
-  show(): void {
+  /**
+   * Attempts to display a preview of the image in VSCode or an image viewer
+   * @param label A prefix for the file's name
+   */
+  show(label: string = "image.ts"): void {
     const temp = tmp.fileSync({
+      prefix: label + "-",
       postfix: ".png",
     });
 
@@ -190,10 +201,15 @@ export class Image {
       // macOS
       exec(`open ${temp.name}`);
     } else {
+      // if code is not in $PATH, this will not work
       exec(`code --reuse-window ${temp.name}`);
     }
   }
 
+  /**
+   * Writes an image to a specified path in the file system
+   * @param filePath A file name
+   */
   saveToPath(filePath: string): void {
     const png = new PNG({
       width: this.width,
@@ -204,6 +220,10 @@ export class Image {
     fs.writeFileSync(filePath, PNG.sync.write(png));
   }
 
+  /**
+   * A list of all colors in the image
+   * @returns An array of the images colors
+   */
   pixels(): Color[] {
     const pixels = [];
 
@@ -216,7 +236,11 @@ export class Image {
     return pixels;
   }
 
-  coordinates() {
+  /**
+   * A list of all coordinates in the image
+   * @returns A two dimensional array of the images pairwise x and y coordinates
+   */
+  coordinates(): number[][] {
     const coords = [];
 
     for (let x = 0; x < this.width; x++) {
@@ -228,7 +252,12 @@ export class Image {
     return coords;
   }
 
-  assertCoordinatesInBounds(x: number, y: number) {
+  /**
+   * Throws an error if a given x and y are not valid coordinates in the image
+   * @param x A number
+   * @param y A number
+   */
+  assertCoordinatesInBounds(x: number, y: number): void {
     assert(Number.isInteger(x), "x coordinate must be an integer.");
     assert(Number.isInteger(y), "y coordinate must be an integer.");
     assert(x >= 0, "x coordinate must be non-negative.");

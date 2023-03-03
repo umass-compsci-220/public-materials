@@ -3,6 +3,7 @@ import assert from "assert";
 import type { StableMatcher, StableMatcherWithTrace } from "../include/stableMatching.js";
 
 export function generateInput(n: number): number[][] {
+  // TODO
   return [];
 }
 
@@ -22,7 +23,7 @@ export function stableMatchingOracle(makeStableMatching: StableMatcher): void {
 
     assert(companies.length === hires.length, "Hires length is correct.");
 
-    // More assertions go here.
+    // TODO: More assertions go here.
   }
 }
 
@@ -40,6 +41,6 @@ export function stableMatchingRunOracle(makeStableMatchingTrace: StableMatcherWi
     const candidates = generateInput(N);
     const { trace, out } = makeStableMatchingTrace(companies, candidates);
 
-    // Assertions go here.
+    // TODO: Assertions go here.
   }
 }
