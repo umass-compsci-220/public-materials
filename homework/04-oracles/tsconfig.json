@@ -23,7 +23,8 @@
     "noUnusedParameters": false,
     "importsNotUsedAsValues": "remove",
     "outDir": "out/",
-    "sourceMap": true
+    "sourceMap": true,
+    "allowJs": true,
   },
   "ts-node": {
     "esm": true

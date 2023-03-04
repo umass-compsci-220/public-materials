@@ -20,9 +20,15 @@ const CHANNEL_NAMES = ["red", "green", "blue"];
 function assertValidColor(color: Color): void {
   assert(color.length === 3);
   CHANNEL_NAMES.forEach((channel, i) => {
-    assert(Number.isInteger(color[i]), `The ${channel} channel of the color must be an integer.`);
-    assert(0 <= color[i], `The ${channel} channel of the color must be at least 0.`);
-    assert(color[i] <= 255, `The ${channel} channel of the color must be at most 255.`);
+    assert(
+      Number.isInteger(color[i]),
+      `[image.ts] Supplied invalid color. The ${channel} channel of the color must be an integer.`
+    );
+    assert(0 <= color[i], `[image.ts] Supplied invalid color. The ${channel} channel of the color must be at least 0.`);
+    assert(
+      color[i] <= 255,
+      `[image.ts] Supplied invalid color. The ${channel} channel of the color must be at most 255.`
+    );
   });
 }
 
@@ -32,14 +38,14 @@ function assertValidColor(color: Color): void {
  * @param height A number
  */
 function assertValidWidthAndHeight(width: number, height: number): void {
-  assert(Number.isInteger(width), "Image width must be an integer.");
-  assert(Number.isInteger(height), "Image height must be an integer.");
+  assert(Number.isInteger(width), "[image.ts] Invalid use of Image class. Image width must be an integer.");
+  assert(Number.isInteger(height), "[image.ts] Invalid use of Image class. Image height must be an integer.");
 
-  assert(width > 0, "Image width must be greater than 0.");
-  assert(height > 0, "Image height must be greater than 0.");
+  assert(width > 0, "[image.ts] Invalid use of Image class. Image width must be greater than 0.");
+  assert(height > 0, "[image.ts] Invalid use  of Image class. Image height must be greater than 0.");
 
-  assert(width < 5000, "Image width must be less than 5000.");
-  assert(height < 5000, "Image height must be less than 5000.");
+  assert(width < 5000, "[image.ts] Invalid use of Image class. Image width must be less than 5000.");
+  assert(height < 5000, "[image.ts] Invalid use of Image class. Image height must be less than 5000.");
 }
 
 export type Color = number[];
@@ -74,7 +80,7 @@ export class Image {
    * @returns The file represented as an `Image` object.
    */
   static loadImageFromFile(filePath: string): Image {
-    assert(filePath.endsWith(".png"), "Only `.png` files are supported.");
+    assert(filePath.endsWith(".png"), "[image.ts] Only `.png` files are supported.");
 
     if (!fs.existsSync(filePath)) {
       throw new Error(`Unable to locate file: \`${filePath}\``);
@@ -175,7 +181,7 @@ export class Image {
     assert.match(
       fileName,
       /^(?!.{256,})(?!(aux|clock\$|con|nul|prn|com[1-9]|lpt[1-9])(?:$|\.))[^ ][ .\w-$()+=[\];#@~,&amp;']+[^. ]$/i,
-      "Invalid file name."
+      "[image.ts] Invalid file name."
     );
     const root = process.cwd();
     const images_out = path.resolve(root, "images_out");
@@ -258,12 +264,12 @@ export class Image {
    * @param y A number
    */
   assertCoordinatesInBounds(x: number, y: number): void {
-    assert(Number.isInteger(x), "x coordinate must be an integer.");
-    assert(Number.isInteger(y), "y coordinate must be an integer.");
-    assert(x >= 0, "x coordinate must be non-negative.");
-    assert(x < this.width, "x coordinate must be smaller than the width.");
-    assert(y >= 0, "y coordinate must be non-negative.");
-    assert(y < this.height, "y coordinate must be smaller than the height.");
+    assert(Number.isInteger(x), "[image.ts] Invalid use of Image class, x coordinate must be an integer.");
+    assert(Number.isInteger(y), "[image.ts] Invalid use of Image class, y coordinate must be an integer.");
+    assert(x >= 0, "[image.ts] Invalid use of Image class, x coordinate must be non-negative.");
+    assert(x < this.width, "[image.ts] Invalid use of Image class,  x coordinate must be smaller than the width.");
+    assert(y >= 0, "[image.ts] Invalid use of Image class, y coordinate must be non-negative.");
+    assert(y < this.height, "[image.ts] Invalid use of Image class, y coordinate must be smaller than the height.");
   }
 
   private getOffset(x: number, y: number): number {
