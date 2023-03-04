@@ -131,6 +131,27 @@ function randomInt(min: number, max: number): number {
 }
 ```
 
+#### Common Issue - 'Error: Type `number` is not assignable to type `never`'
+
+TypeScript uses [type inference](https://www.typescriptlang.org/docs/handbook/type-inference.html) to infer the types of your variables from assignment and context. This means that the majority of the time, we can omit type annotations on variables:
+
+```ts
+// Compiler:
+// x is assigned to 5
+//  -> 5 is a number
+//  -> x must be a number
+let x = 5;
+```
+
+However, sometimes we need to assist the compiler and tell it what we mean. Initializing 2D arrays is one of those cases. To aid the compiler, provide it a type annotation.
+
+```ts
+// Compiler:
+// type annotation is present
+//  -> my2DBoolArray is the user specified type of boolean[][]
+const my2DBoolArray: boolean[][] = [];
+```
+
 2. Implement `stableMatchingOracle` inside of [`oracles.ts`](./src/oracles.ts).
 
 ```ts
