@@ -1,6 +1,6 @@
 # Oracles
 
-- Please download the project [here](./04-oracles.zip)
+- Please download the project [here](../archives/04-oracles.zip)
 - This project is divided into two homeworks (HW4a, HW4b)
   - Both carry the weight of a full homework
 

@@ -1,5 +1,9 @@
 {
-  "include": ["src/**/*", "__tests__/**/*", "include/**/*"],
+  "include": [
+    "__tests__/**/*",
+    "include/**/*",
+    "src/**/*"
+  ],
   "compilerOptions": {
     "lib": [
       "es2022"
@@ -18,13 +22,13 @@
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": true,
+    "noUncheckedIndexedAccess": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "importsNotUsedAsValues": "remove",
     "outDir": "out/",
     "sourceMap": true,
-    "allowJs": true,
+    "allowJs": true
   },
   "ts-node": {
     "esm": true
