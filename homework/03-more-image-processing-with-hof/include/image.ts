@@ -197,7 +197,7 @@ export class Image {
    */
   show(label: string = "image.ts"): void {
     const temp = tmp.fileSync({
-      prefix: label + "-",
+      prefix: label,
       postfix: ".png",
     });
 
