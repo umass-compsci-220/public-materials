@@ -13,10 +13,6 @@ shopt -s extglob
 for title in ${titles[@]}; do
   mkdir -p ./$title
 
-  if [[ -f ./$title/README.md ]]; then
-    cp -r ../../materials/homework/$title/!(README.md) ./$title
-    cp ./$title/README.md ../../materials/homework/$title
-  else
-    cp -r ../../materials/homework/$title/* ./$title
-  fi
+  cp -r ../../materials/homework/$title/!(*.override.json) ./$title
+  cp ../../materials/homework/archives/$title.zip ./archives
 done
