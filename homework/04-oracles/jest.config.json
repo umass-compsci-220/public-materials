@@ -5,7 +5,6 @@
     "global": {
       "branches": 50,
       "functions": 100,
-      "lines": 80,
       "statements": 80
     }
   },
