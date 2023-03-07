@@ -168,6 +168,8 @@ As mentioned in the [student expectations](#student-expectations), you should be
 
 ### Part B
 
+**NOTE: [`stableMatching.js`](./include/stableMatching.js) was missing members and was updated on March 7th. Please update your version if necessary.**
+
 Now write an oracle that determines if a function follows the specified algorithm:
 
 **Algorithm**: We assume the following non-standard variant: At any step, any unmatched company or candidate may propose. Every party always proposes to the next potential partner on their preference list, starting with the top choice. Proposals are not repeated. Any unmatched party that receives a proposal accepts unconditionally. If the receiving party is already matched, but they receive a better offer (higher in their preference list), they accept, and their current partner becomes unmatched; otherwise, the offer is rejected. The algorithm ends when all parties are either matched or have made offers to the entire preference list. The algorithm is under-specified/nondeterministic: it doesn’t state whether a company or a candidate proposes at a given step, nor which one does, as long as the given rules are observed.
