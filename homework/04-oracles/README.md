@@ -152,6 +152,8 @@ However, sometimes we need to assist the compiler and tell it what we mean. Init
 const my2DBoolArray: boolean[][] = [];
 ```
 
+**Although you are not required to write tests, you should confirm your `generateInput` works correctly before attempting `stableMatchingOracle`.**
+
 2. Implement `stableMatchingOracle` inside of [`oracles.ts`](./src/oracles.ts).
 
 ```ts
