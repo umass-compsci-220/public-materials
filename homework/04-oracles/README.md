@@ -271,7 +271,7 @@ This means that Amazon’s preferences are Alice, Charles, and Bob, in that orde
 ];
 ```
 
-A possible trace could look like this: `[{from:1, to:1, fromCo:false}]`. This means that Bob makes an offer to Boeing. This offer is invalid, since Bob’s top choice is Amazon, and Bob did not previously offer to Acme in this run.
+A possible trace could look like this: `[{from:1, to:1, fromCo:false}]`. This means that Bob makes an offer to Boeing. This offer is invalid, since Bob’s top choice is Amazon, and Bob did not previously offer to Amazon in this run.
 
 Another possible trace could be `[{from:2, to:0, fromCo:true}]`. This means that Cisco makes an offer to Alice. This is a valid offer, since Cisco’s top choice is Alice, and Cisco is unmatched. Alice’s top choice is Amazon, but being unmatched, they has to accept the offer. The result is that Alice and Cisco are now marked as matched. If later in the run Alice receives an offer from Amazon, Alice accepts and is matched to Amazon, and Cisco becomes unmatched.
 
