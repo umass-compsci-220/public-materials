@@ -58,12 +58,12 @@ More formally, we need a **perfect matching** where every member in group $A$ is
 
 However, **everyone has a preference** with who they are matched with. Every member from each group ranks all members from the other group by preference.
 
-A solution to the stable matching problem will take as input the two groups and everyone's preference. As output, it will produce a **stable matching**. A matching is **stable** if there does not exist two matched pairs, $[a_1, b_1]$ and $[a_2, b_2]$, such that:
+A solution to the stable matching problem will take as input the two groups and everyone's preference. As output, it will produce a **stable matching**. A matching is **stable** if there do not exist two matched pairs, $[a_1, b_1]$ and $[a_2, b_2]$, such that:
 
 - $a_1$ prefers $b_2$ over $b_1$, and
 - $b_2$ prefers $a_1$ over $a_2$
 
-Alternatively, a matching is not stable (**unstable**) if there exists members $a$ and $b$ who are not paired with each other, but prefer each other over their current pair.
+Alternatively, a matching is not stable (**unstable**) if there exist members $a$ and $b$ who are not paired with each other, but prefer each other over their current pair.
 
 ### Companies and Candidates
 
