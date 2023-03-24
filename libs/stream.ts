@@ -1,3 +1,9 @@
+// Readonly<T> will compose a type that has all fields of T, but is readonly.
+// Attempting to write (do an assignment) to any field will produce a compile-time error.
+
+/**
+ * The exposed (exported) list interface.
+ */
 export type Stream<T> = Readonly<_Stream<T>>;
 
 /**
@@ -25,7 +31,7 @@ interface Memoized<T> {
  * @param f A zero-parameter function (thunk)
  * @returns A memoized version of @param f
  */
-export function memo<T>(f: () => T): Memoized<T> {
+function memo<T>(f: () => T): Memoized<T> {
   let evaluated = false;
   let value: T;
   return {
@@ -47,24 +53,16 @@ export function memo<T>(f: () => T): Memoized<T> {
  * @param tail The memoized tail of the stream node
  * @returns A new stream node
  */
-export function snode<T>(head: T, tail: Memoized<Stream<T>>): Stream<T> {
+export function snode<T>(head: T, tail: () => Stream<T>): Stream<T> {
+  const memoizedTail = memo(tail);
+
   return {
     isEmpty: () => false,
     head: () => head,
-    tail: tail.get,
+    tail: memoizedTail.get,
     toString: () => `snode(${head}, ${tail.toString()})`,
-    map: f =>
-      snode(
-        f(head),
-        memo(() => tail.get().map(f))
-      ),
-    filter: pred =>
-      pred(head)
-        ? snode(
-            head,
-            memo(() => tail.get().filter(pred))
-          )
-        : tail.get().filter(pred),
+    map: f => snode(f(head), () => memoizedTail.get().map(f)),
+    filter: pred => (pred(head) ? snode(head, () => memoizedTail.get().filter(pred)) : memoizedTail.get().filter(pred)),
   };
 }
 
@@ -94,8 +92,5 @@ export function sempty<T>(): Stream<T> {
  * @returns A stream of numbers starting from `n`
  */
 export function from(start: number, delta = 1): Stream<number> {
-  return snode(
-    start,
-    memo(() => from(start + delta, delta))
-  );
+  return snode(start, () => from(start + delta, delta));
 }
