@@ -90,7 +90,7 @@ interface Hire {
   candidate: number;
 }
 
-export type StableMatcher = (companies: number[][], candidates: number[][]) => Hire[];
+type StableMatcher = (companies: number[][], candidates: number[][]) => Hire[];
 ```
 
 A `Hire` is an object with two fields that represents a matching between a company and candidate. A `StableMatcher` is a function that takes in two 2D arrays of numbers, specifically the preferences of the companies and candidates, and returns an array of `Hire` objects (`Hire[]`).
@@ -113,7 +113,7 @@ export function generateInput(n: number): number[][] {
 
 This function should produce an $n \times n$ array of preferences for companies or candidates. This will be used as input for testing a given solution. Your function should generate **random values** in order to test a given solution with a broad spectrum of input.
 
-Constructing a function to complete this is non-trivial. Provided below is a description of the Fisher-Yates shuffling algorithm.
+Constructing a function to complete this is non-trivial. Provided below is a description of the Fisher-Yates shuffling algorithm:
 
 ```txt
 -- To shuffle an array a of n elements (indices 0..n-1):
@@ -125,7 +125,7 @@ for i from n−1 down to 1 do
 An function that returns a random number between some range can be done using `Math.random` and `Math.floor`:
 
 ```ts
-// Returns a random int i where min <= i < max
+// Returns a random integer i where min <= i < max
 function randomInt(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -164,13 +164,13 @@ export function stableMatchingOracle(f: (companies: number[][], candidates: numb
 
 This function is an oracle for the Stable Matching Problem. If `f` is a valid solution of the stable matching problem, it should do nothing (the return type is `void`). If `f` is an invalid solution, it should throw an `AssertionError` (use `assert(...)`).
 
+As a reminder, the `assert` function will take in a logical expression and an optional message as arguments (`assert(x === 1, "X should be one.")`). If the logical expression is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy), then `assert` will throw an `AssertionError` containing the message. If the expression is truthy (not falsy) `assert` will do nothing.
+
 A template for the `stableMatchingOracle` function is given inside of [`oracles.ts`](./src/oracles.ts). To do well, you should carefully consider all the different ways in which the output could be invalid for the original problem statement. You may assume the output is of the right type, `Hire[]`, but nothing else.
 
-As mentioned in the [student expectations](#student-expectations), you should be employing proper coding abstractions (avoid code duplication). When implementing this function, look at all the related data a company or candidate has. What are the common operations and queries that you might do on this data? Is there any way to group this together or pre-compute anything? **Using object may be helpful.** Think before you code.
+As mentioned in the [student expectations](#student-expectations), you should be employing proper coding abstractions (avoid code duplication). When implementing this function, look at all the related data a company or candidate has. What are the common operations and queries that you might do on this data? Is there any way to group this together or pre-compute anything? **Using objects may be helpful.** Think before you code.
 
 ### Part B
-
-**NOTE: [`stableMatching.js`](./include/stableMatching.js) was missing members and was updated on March 7th. Please update your version if necessary.**
 
 Now write an oracle that determines if a function follows the specified algorithm:
 
@@ -190,7 +190,7 @@ interface Run {
   out: Hire[];
 }
 
-export type StableMatcherWithTrace = (companies: number[][], candidates: number[][]) => Run;
+type StableMatcherWithTrace = (companies: number[][], candidates: number[][]) => Run;
 ```
 
 An `Offer` is an object with three fields that represents a proposal from one party member to a member of another party (company -> candidate or candidate -> company). A `Run` is an object that represents the series of steps an algorithm took (`trace`) to produce a solution (`out`). A `StableMatcherWithTrace` is just like a `StableMatcher`, but it returns a `Run`.
@@ -209,9 +209,9 @@ This function should test the provided implementation of stable matching. It sho
   - The trace need not be a complete algorithm run, it may stop at any point
 - The produced matching (`out`) is indeed the result of the offers in the trace
 
-As with part 1, do nothing if it is valid. Throw an `AssertionError` if it is invalid (use `assert(...)`). You may assume the output is of the right type, `Run`, but nothing else.
+As with part A, do nothing if it is valid. Throw an `AssertionError` if it is invalid (use `assert(...)`). You may assume the output is of the right type, `Run`, but nothing else.
 
-Additionally, you should update [`oracle.test.ts`](./src/oracle.test.ts) to skip the tests from part 1 and not skip the part 2 tests.
+Additionally, you should update [`oracle.test.ts`](./src/oracle.test.ts) to skip the tests from part A and not skip the part B tests.
 
 ```ts
 // Before
