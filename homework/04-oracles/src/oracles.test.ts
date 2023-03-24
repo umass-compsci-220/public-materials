@@ -11,6 +11,7 @@ describe("generateInput", () => {
   // Tests for generateInput go here.
 });
 
+// Part A
 describe("Part A: stableMatchingOracle", () => {
   // You do not need to write more tests. The two provided are sufficient.
 
@@ -25,7 +26,7 @@ describe("Part A: stableMatchingOracle", () => {
   });
 });
 
-// Part 2
+// Part B
 describe.skip("Part B: stableMatchingRunOracle", () => {
   // You do not need to write more tests than the two provided
 

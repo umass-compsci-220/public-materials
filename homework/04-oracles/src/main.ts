@@ -9,7 +9,7 @@ const N = 10;
 const companies = generateInput(N);
 debugPrint("Companies:", companies);
 const candidates = generateInput(N);
-debugPrint("Candidates:", companies);
+debugPrint("Candidates:", candidates);
 
 const solution = STABLE_MATCHING_SOLUTION_1(companies, candidates);
 debugPrint("Correct Solution:", solution);

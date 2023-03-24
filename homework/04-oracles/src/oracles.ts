@@ -41,6 +41,10 @@ export function stableMatchingRunOracle(makeStableMatchingTrace: StableMatcherWi
     const candidates = generateInput(N);
     const { trace, out } = makeStableMatchingTrace(companies, candidates);
 
-    // TODO: Assertions go here.
+    // This statement is here to prevent linter warnings about `trace` and `out` not being used.
+    // Remove it as necessary.
+    console.log(trace, out);
+
+    // TODO: Assertions go here
   }
 }
