@@ -43,7 +43,7 @@ function memo<T>(f: () => T): Memoized<T> {
 
       return value;
     },
-    toString: () => (evaluated ? "<unevaluated>" : String(value)),
+    toString: () => (evaluated ? String(value): "<unevaluated>"),
   };
 }
 
