@@ -37,12 +37,12 @@ export function node<T>(data: T, next: List<T>): List<T> {
     tail: () => next,
     isEmpty: () => false,
     toString: () => `node(${data}, ${next.toString()})`,
-    map: (f) => {
+    map: f => {
       return node(f(data), next.map(f));
     },
-    filter: (pred) => {
+    filter: f => {
       function reducer(acc: List<T>, elem: T) {
-        return pred(elem) ? node(elem, acc) : acc;
+        return f(elem) ? node(elem, acc) : acc;
       }
 
       return listFoldRight(reducer, empty());
