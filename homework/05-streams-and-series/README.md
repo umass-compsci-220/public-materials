@@ -1,6 +1,6 @@
 # Streams and Series
 
-Please download the project [here](../archives/05-streams.zip).
+Please download the project [here](../archives/05-streams-and-series.zip).
 
 ## Overview
 
