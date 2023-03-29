@@ -31,7 +31,7 @@
     "start": "ts-node ./src/main.ts",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "test:json": "jest --json"
+    "test:json": "jest --json --outputFile=test-results.json"
   },
   "type": "module",
   "name": "03-more-image-processing-with-hof"
