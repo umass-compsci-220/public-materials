@@ -18,12 +18,15 @@ interface _Stream<T> {
   filter: (f: (x: T) => boolean) => Stream<T>;
 }
 
+interface Serializable {
+  toString: () => string;
+}
+
 /**
  * The Memoized function interface.
  */
-interface Memoized<T> {
+interface Memoized<T> extends Serializable {
   get: () => T;
-  toString: () => string;
 }
 
 /**
@@ -31,7 +34,7 @@ interface Memoized<T> {
  * @param f A zero-parameter function (thunk)
  * @returns A memoized version of @param f
  */
-function memo<T>(f: () => T): Memoized<T> {
+function memo<T extends Serializable>(f: () => T): Memoized<T> {
   let evaluated = false;
   let value: T;
   return {
@@ -43,7 +46,7 @@ function memo<T>(f: () => T): Memoized<T> {
 
       return value;
     },
-    toString: () => (evaluated ? String(value): "<unevaluated>"),
+    toString: () => (evaluated ? value.toString() : "<unevaluated>"),
   };
 }
 
@@ -60,9 +63,9 @@ export function snode<T>(head: T, tail: () => Stream<T>): Stream<T> {
     isEmpty: () => false,
     head: () => head,
     tail: memoizedTail.get,
-    toString: () => `snode(${head}, ${tail.toString()})`,
+    toString: () => `snode(${head}, ${memoizedTail.toString()})`,
     map: f => snode(f(head), () => memoizedTail.get().map(f)),
-    filter: pred => (pred(head) ? snode(head, () => memoizedTail.get().filter(pred)) : memoizedTail.get().filter(pred)),
+    filter: f => (f(head) ? snode(head, () => memoizedTail.get().filter(f)) : memoizedTail.get().filter(f)),
   };
 }
 
@@ -88,9 +91,20 @@ export function sempty<T>(): Stream<T> {
 /**
  * Constructs an infinite stream of numbers
  * @param n A number
- * @param delta A number representing the jump size, defaults to 1
+ * @param step A number representing the jump size, defaults to 1
  * @returns A stream of numbers starting from `n`
  */
-export function from(start: number, delta = 1): Stream<number> {
-  return snode(start, () => from(start + delta, delta));
+export function from(start: number, step = 1): Stream<number> {
+  return snode(start, () => from(start + step, step));
+}
+
+/**
+ * Constructs an finite stream of numbers
+ * @param start The starting number
+ * @param end The ending number, inclusive
+ * @param step A number representing the jump size, defaults to 1
+ * @returns A stream of numbers starting from `n`
+ */
+export function to(start: number, end: number, step = 1): Stream<number> {
+  return start <= end ? snode(start, () => to(start + step, end, step)) : sempty();
 }
