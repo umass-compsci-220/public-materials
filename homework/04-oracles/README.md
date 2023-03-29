@@ -131,7 +131,7 @@ function randomInt(min: number, max: number): number {
 }
 ```
 
-#### Common Issue - 'Error: Type `number` is not assignable to type `never`'
+#### Common Issue - 'Type `number` is not assignable to type `never`'
 
 TypeScript uses [type inference](https://www.typescriptlang.org/docs/handbook/type-inference.html) to infer the types of your variables from assignment and context. This means that the majority of the time, we can omit type annotations on variables:
 
@@ -150,6 +150,15 @@ However, sometimes we need to assist the compiler and tell it what we mean. Init
 // type annotation is present
 //  -> my2DBoolArray is the user specified type of boolean[][]
 const my2DBoolArray: boolean[][] = [];
+```
+
+#### Common Issue - 'Unsafe assignment of type `any[]` to variable of type `number[]`'
+
+Similar to situation described above, creating an array using the array constructor without a type parameter (`new Array(...)`) does not give the compiler enough context. A new array? Of what type? Try explicitly telling the compiler what type of array you are trying to construct.
+
+```ts
+// Create a boolean array of length 5, fill it with false
+my2DBoolArray[0] = new Array<boolean>(5).fill(false);
 ```
 
 **Although you are not required to write tests, you should confirm your `generateInput` works correctly before attempting `stableMatchingOracle`.**
