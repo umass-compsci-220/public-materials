@@ -1,0 +1,12 @@
+{
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": ["src/**/*.ts", "include/**/*.ts"],
+      "options": {
+        "parser": "typescript"
+      }
+    }
+  ],
+  "printWidth": 120
+}

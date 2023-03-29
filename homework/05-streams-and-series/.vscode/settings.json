@@ -1,0 +1,7 @@
+{
+  "files.autoSave": "afterDelay",
+  "typescript.suggest.autoImports": false,
+  "javascript.suggest.autoImports": false,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifierEnding": "js"
+}
