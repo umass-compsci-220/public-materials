@@ -45,9 +45,9 @@ For all functions below, use streams. A series is represented by a **nonempty st
 
 3. Write a function `derivSeries` that takes a stream of coefficients for the series $s(x)$, and returns a stream of coefficients for the derivative $s^\prime(x)$. For example, given $1+2x+3x^2+\ldots$ the result will be $2+6x+\ldots$
 
-4. Write a function `coeff` that takes a stream of coefficients for the series $s(x)$ and a natural number $n$, and returns the array of coefficients of $s(x)$, up to and including that of order $n$. If the stream has fewer coefficients, return as many as there are.
+4. Write a function `coeff` that takes a stream of coefficients for the series $s(x)$ and a natural number $n$, and returns the array of coefficients of $s(x)$, up to and including that of order (degree) $n$. If the stream has fewer coefficients, return as many as there are.
 
-5. Write a function `evalSeries` that takes a stream of coefficients for the series $s(x)$, and a natural number $n$, and returns a closure. When called with a real number $x$, this closure will return the sum of all terms of $s(x)$ up to and including the term of order $n$.
+5. Write a function `evalSeries` that takes a stream of coefficients for the series $s(x)$, and a natural number $n$, and returns a closure. When called with a real number $x$, this closure will return the sum of all terms of $s(x)$ up to and including the term of degree $n$.
 
 6. Write a function `applySeries` that takes a function `f` and a value `v` and returns the stream representing the infinite series $s(x)$ where $a_0 = v$, and $a_{k + 1}= f(a_k)$, for all $k ≥ 0$.
 
