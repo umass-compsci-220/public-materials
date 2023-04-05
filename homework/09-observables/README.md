@@ -31,7 +31,7 @@ For all functions below, use the provided Observable class.
 
 ## Optional Programming Tasks
 
-The following questions were taken directly from past exams and do not count for credit. They are provided for additional practice only. Their full test suite is provided in `observables.test.ts` as gradescope doesn't evaluate these functions. Solutions are [here](#).
+The following questions were taken directly from past exams and do not count for credit. They are provided for additional practice only. You will see autograder tests for these functions on gradescope, but they have no credit associated with them. The solutions are available in the corresponding midterm solutions on moodle.
 
 1. [FALL 2022 MIDTERM 2] Write a function `mergeMax` that takes two Observables `o1` and `o2` with type `Observable<number>`, subscribes functions to each, and returns a new Observable which updates its subscribers whenever it receives a value which is no smaller than any value received so far from o1 or o2. Subscribers should be sent objects of the type { obs: number, v: number }, where v is the value received, and obs is either 1 or 2, indicating the source of the value.
 
