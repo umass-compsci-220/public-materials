@@ -39,7 +39,7 @@ The following questions were taken directly from past exams and do not count for
 
 3. [SPRING 2022 MIDTERM 2] Consider the Observable class from lecture, receiving updates with positive values. Implement a method `greaterAvg` returning a new `Observable<number>` that is updated with every number that is at least 50% larger than the average of the previous two number. Hint: use `this`.
 
-4.  Consider the Observable class provided in observable.ts, receiving updates with numeric values. In observables.ts implement a method `signChange()` that returns a new `Observable<number>` which will be updated with every nonzero value v that is not preceded by a nonzero value of the same sign. Hint: use `this`.
+4. [FALL 2021 FINAL EXAM] Consider the Observable class provided in observable.ts, receiving updates with numeric values. In observables.ts implement a method `signChange()` that returns a new `Observable<number>` which will be updated with every nonzero value v that is not preceded by a nonzero value of the same sign. Hint: use `this`.
 
     - Write a function `usingSignChange` that takes an array of numbers `numArr` and an observer function `f`. You should subscribe `f` to the observer returned by the `signChange` method and then update the observer returned by `SignChangeObservable` with every number in `numArr` starting at index 0. The function should return nothing.
 
