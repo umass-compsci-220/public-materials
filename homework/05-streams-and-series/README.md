@@ -16,8 +16,10 @@ In this assignment, you will work with streams to evaluate power series. Conside
 Students will be graded on their ability to:
 
 - Correctly implement the functions [specified below](#programming-tasks)
-- Follow the [coding](../../guidelines/CODING.md), [bad practice](../../guidelines/BAD_PRACTICES.md), and [testing](../../guidelines/TESTING.md) guidelines
+- Resolve all linter warnings
+- Follow the [coding](../../guidelines/CODING.md), [bad practice](../../guidelines/BAD_PRACTICES.md) and [testing](../../guidelines/TESTING.md) guidelines
 - Design full-coverage [unit-tests](#testing) for the functions they implemented
+  - See the [testing guidelines](../../guidelines/TESTING.md#coverage) on coverage for mor details
 
 ### Resources
 
