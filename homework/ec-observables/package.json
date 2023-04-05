@@ -29,5 +29,5 @@
     "test:json": "jest --json --outputFile=test-results.json"
   },
   "type": "module",
-  "name": "09-observables"
+  "name": "ec-observables"
 }
