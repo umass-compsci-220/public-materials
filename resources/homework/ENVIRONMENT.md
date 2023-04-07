@@ -152,9 +152,10 @@ The majority of [VSCode is written in TypeScript](https://github.com/Microsoft/v
 - [VSCode ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Prettier VSCode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-- [VSCode Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
 
 You can install these extensions through the [VSCode Extensions tab](https://code.visualstudio.com/docs/editor/extension-marketplace).
+
+[VSCode Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) may also be helpful, but sometime acts strangely. Use with caution, default to `npm run test` in the terminal if it giving you issues.
 
 ### Configuration
 

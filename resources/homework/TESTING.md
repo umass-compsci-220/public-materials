@@ -75,12 +75,13 @@ You are welcome to use either interface for writing your tests (we recommenced a
 
 ## Running and Debugging Tests
 
-If you have the [jest extension for VSCode](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest), you can look at [their "How To?" section](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest#how-to) of their docs. This covers the basics: setting up the extension, triggering a test run, debugging tests, and calculating coverage.
-
-Alternatively, you can run the provided test script by opening a VSCode terminal (`Terminal -> New Terminal`) and running the `npm run test` command. Use `npm run test:coverage` to get coverage results.
+You can run the provided test script by opening a VSCode terminal (`Terminal -> New Terminal`) and running the `npm run test` command. Use `npm run test:coverage` to get coverage results.
 
 <p align="center">
   <img src="../../media/jest-output.png" />
 </p>
 
 Above, is an example output of the `npm run test:coverage` command. There was only one test written (removeRed removes red), so the homework coverage requirements were not met.
+
+## Coverage
+
