@@ -23,11 +23,11 @@ Students will be graded on their ability to:
 
 For all functions below, use the provided Observable class.
 
-1. Write a function `classifyObservers` that takes in an array `obsArr` of Observables where each Observable updates with a type `string`, `number`, or  `boolean`. Return an object with three observables, one for each named type, that updates anytime a Observable of that type in the input array updates.
+1. Write a function `classifyObservers` that takes in an array `obsArr` of Observables where each Observable updates with a type `string`, `number`, or  `boolean`. Return an object with three observables, one for each named type. Each of the three observables updates anytime a Observable of that type in the input array updates.
 
 2. Write a function `obsStrCond` that takes a nonempty array `funcArr` of functions with type `string => string`, a function f with type `string => boolean`, and an Observable `o` with type `Observable<string>`. It returns an `Observable<string>` that updates when `o` updates, in the following way. If `f` returns true for the string obtained by applying the composition of the functions in `funcArr` (with the function at index 0 being applied first) to the update value of `o`, then the returned observable should update with that string. If `f` returns false, update the returned observable with the unchanged update value of `o`.
 
-3. Write a function `statefulObserver` that takes an `Observable<number>` `o` as input returns a new `Observable<number>` which only updates if the current update value from `o` is divisible by the previous update value from `o`.
+3. Write a function `statefulObserver` that takes an `Observable<number>` `o` as input and returns a new `Observable<number>` which only updates if the current update value from `o` is divisible by the previous update value from `o`.
 
 ## Optional Programming Tasks
 
