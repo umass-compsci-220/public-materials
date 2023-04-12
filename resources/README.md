@@ -70,7 +70,7 @@ Please do come to office hours for:
 | Tuesday       | 1:00pm - 2:00pm   | Anna Allen         | T220                                                              |
 | Tuesday       | 1:45pm - 2:45pm   | Kyler Schulz       | T220                                                              |
 | Tuesday       | 5:30pm - 6:30pm   | Marius Minea       | LGRC A261 and [Zoom](https://umass-amherst.zoom.us/j/92493044446) |
-| **Wednesday** | 2:30pm - 3:30pm   | John Wordell       | T220                                                              |
+| **Wednesday** | 1:30pm - 2:30pm   | John Wordell       | T220                                                              |
 | Wednesday     | 2:30pm - 3:30pm   | Daniel Melanson    | T220                                                              |
 | Wednesday     | 3:30pm - 4:30pm   | Maximilian Kuechen | T220                                                              |
 | Wednesday     | 4:30pm - 5:30pm   | Emeka Ifejiagwa    | [Zoom](https://umass-amherst.zoom.us/j/3476472584)                |
