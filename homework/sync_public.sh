@@ -7,6 +7,7 @@ titles=(
   "04-oracles"
   "05-streams-and-series"
   "ec-observables"
+  "06-fluent-filter-and-json"
 )
 
 shopt -s dotglob

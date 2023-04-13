@@ -1,6 +1,6 @@
 {
   "collectCoverageFrom": ["<rootDir>/src/!(main).ts"],
-  "coverageReporters": ["json-summary", "text"],
+  "coverageReporters": ["lcov", "json-summary", "text"],
   "coverageThreshold": {
     "global": {
       "branches": 50,
