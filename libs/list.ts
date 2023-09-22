@@ -40,13 +40,7 @@ export function node<T>(data: T, next: List<T>): List<T> {
     map: f => {
       return node(f(data), next.map(f));
     },
-    filter: f => {
-      function reducer(acc: List<T>, elem: T) {
-        return f(elem) ? node(elem, acc) : acc;
-      }
-
-      return listFoldRight(reducer, empty());
-    },
+    filter: f => f(data) ? node(data, rest.filter(f)) : rest.filter(f),
     reduce: (f, init) => next.reduce(f, f(init, data)),
     foldRight: (f, init) => listFoldRight(f, init),
   };
