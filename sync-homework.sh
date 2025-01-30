@@ -1,4 +1,4 @@
-homework=(ec 00 01 02 03 04 05 06 08)
+homework=(01)
 
 for hw in "${homework[@]}"
 do
