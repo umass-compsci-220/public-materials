@@ -29,7 +29,7 @@ console.log(`mappedArr2: ${mappedArr2}`);
 
 // Filter Review
 
-// Sample filter implementation
+// Sample map implementation
 function filter<T>(a: T[], f: (x: T) => boolean): T[] {
   const result: T[] = [];
   for (let i = 0; i < a.length; ++i) {
@@ -58,15 +58,39 @@ const filteredArr2 = to_filter_arr.filter(isEven2);
 console.log(`filteredArr1: ${filteredArr1}`);
 console.log(`filteredArr2: ${filteredArr2}`);
 
+// Reduce Review
+
+// Sample Reduce Implementation
+function reduce<T, U>(a: T[], f: (acc: U, e: T) => U, init: U): U {
+  let result = init;
+  for (let i = 0; i < a.length; ++i) {
+    result = f(result, a[i]);
+  }
+  return result;
+}
+
+// Example:
+
+const arr = [3, 2, 6, 2, 2, 0];
+
+const result = reduce(arr, (prod, e) => prod * e, 1);
+// Alternatively: arr.reduce((prod, e) => prod * e, 1);
+
+console.log(result);
+
 // In class exercises
-export function nonNegatives(arr: number[]): number[] {
-  return arr.filter((x: number): boolean => x >= 0);
+
+function keepNonNegativeValues(a: number[]): number[] {
+  return a.filter(x => x >= 0);
 }
 
 export function nonNegatives2D(arr: number[][]): number[][] {
-  return arr.map(nonNegatives);
+  return arr.map(keepNonNegativeValues);
 }
 
-export function noNegativeRows(arr: number[][]): number[][] {
-  return arr.map((x: number[]): number[] => (nonNegatives(x).length === x.length ? x : []));
+export function sumSquaresPositive(nums: number[]): number {
+  return nums
+    .filter(num => num > 0)
+    .map(num => Math.sqrt(num)) // Can we simplify this?
+    .reduce((sum, num) => sum + num, 0);
 }
