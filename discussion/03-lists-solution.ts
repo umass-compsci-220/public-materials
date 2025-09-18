@@ -82,28 +82,3 @@ export function sumPositivesAndNegatives(arr: number[]): [number, number] {
 export function reverseFilter<T>(list: List<T>, filterF: (x: T) => boolean): List<T> {
   return list.reduce((acc, e) => (filterF(e) ? node(e, acc) : acc), empty());
 }
-
-// Exercise 3
-// export function arrayToList<T>(arr: T[]): List<T> {
-//   function arrayToListIdx(arr: T[], currIdx: number): List<T> {
-//     if (arr.length == currIdx) {
-//       return empty<T>();
-//     }
-//     return node(arr[currIdx], arrayToListIdx(arr, currIdx + 1));
-//   }
-//   return arrayToListIdx(arr, 0);
-// }
-
-// or
-// export function arrayToList<T>(arr: T[]): List<T> {
-//   const reducer = (lst: List<T>, x: T) => node(x, lst);
-//   return arr.reduceRight(reducer, empty<T>());
-// }
-
-// Bonus Exercise 4
-// export function listToArray<T>(list: List<T>): T[] {
-//   return list.reduce((arr, e) => {
-//     arr.push(e);
-//     return arr;
-//   }, [] as T[]);
-// }
